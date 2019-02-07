@@ -1,0 +1,79 @@
+body{
+    background-color:gray;
+    color:white;
+}
+
+header, main, nav, footer {
+    text-align: center;
+
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+    color:pink;
+}
+
+nav a {                         /* links within "nav" container */
+    padding:15px;        
+    padding-bottom:4px;
+    font-size:1.8em;
+    text-decoration: none;    /* removes underline*/
+    color:white;              /* by default, links are blue*/
+}
+
+
+nav a:hover { /*pseudo class*/
+    border-bottom:2px orange solid;
+    font-size: 2em;
+    transition: .9s;    /* transition effect */
+
+}
+
+nav .current{
+    border-bottom:2px orange solid;
+}
+
+
+#me, #welcomeText{
+    float:left;
+    text-align: left;
+
+}
+
+footer{
+    clear: left;
+    font-size: 0.5em;
+    color:pink;
+}
+
+table{
+    margin: 0px auto;
+}
+
+td{
+    padding-right: 10px;
+    font-size:1.3em;
+}
+
+td strong{
+    color: pink;
+}
+
+#table-header{
+    background-color: black;
+}
+
+.table-row{
+    background-color: black;
+}
+
+ul{
+    text-align:left;
+    padding-left:200px;
+}
+
+.hobby {
+    color:yellow;
+}

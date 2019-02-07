@@ -1,0 +1,48 @@
+body{
+    background-color:black;
+    color:white;
+}
+
+header, main, nav, footer {
+    text-align: center;
+
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+    color:yellow;
+}
+
+#EasternConference{
+    border:none;
+    display: flex;
+    padding: 10px;
+    padding-left: 250px;
+}
+#WesternConference{
+    border: none;
+    display: flex;
+    padding: 10px;
+    padding-left: 250px;
+}
+#celtics{
+    border-color: red;
+    padding: 10px;
+
+}
+
+p:hover{
+    font-size: 2em;
+    color: yellow;
+    transition: .9s;
+    border-color: yellow;
+    border-width: 2px;
+}
+
+img:fall{
+    border-radius: 50%;
+}
+
+
