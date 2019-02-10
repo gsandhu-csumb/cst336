@@ -5,10 +5,8 @@
         // var remainingG = document.querySelector('#remainingG');
         var userWins = document.querySelector('#wins');
         var userLosses = document.querySelector('#losses');
-
         var guessSubmit = document.querySelector('.guessSubmit');
         var guessField = document.querySelector('.guessField');
-        
         var guessCount = 1;
         var dubs = 0;
         var ls = 0;
@@ -17,7 +15,6 @@
         guessField.focus();
         // console.log(randomNumber);
         // document.getElementById("numberToGuess").innerHTML = randomNumber;
-            
         function checkGuess(){
         // alert('I am a placeholder');
             var userGuess = Number(guessField.value);
@@ -60,9 +57,7 @@
                 guessField.value = ' ';
                 guessField.focus();
         }
-        
         guessSubmit.addEventListener('click', checkGuess);
-        
         function setGameOver(){
             guessField.disabled = true;
             guessSubmit.disabled = true;
