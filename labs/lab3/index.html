@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> US Geography Quiz!</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    
+    </head>
+    <body>
+        <h1>US Geography Quiz!</h1>
+        
+        <h2>What is the capital of California?</h2>
+        <input type ="text" id="q1">
+        <div id="q1_feedback">
+            
+        </div>
+        
+        <h2>What is the longest US river?</h2>
+        <select id="q2">
+            <option>Select One</option>
+            <option>Missouri</option>
+            <option>Mississippi</option>
+            <option>Hudson</option>
+            <option>Colorodo</option>
+        </select>
+        <div id="q2_feedback">
+            
+        </div>
+        
+        <h2>What is the smallest US State?</h2>
+        <input type="radio" name="q3" id="maine" value="Maine" ><label for="maine">Maine</label> 
+        <input type="radio" name="q3" id="ri" value="Rhode Island" ><label for="ri">Rhode Island</label> 
+        <input type="radio" name="q3" id="ml" value="Maryland" ><label for="ml">Maryland</label>
+        <input type="radio" name="q3" id="del" value="Delaware" ><label for="del">Delaware</label> 
+        <div id="q3_feedback">
+            
+        </div>
+        
+        <h2> What presidents are carved into Mount Rushmore </h2>
+        <input type="checkbox" name="q4"><label id="jackson"> A. Jackson</label>       
+        <input type="checkbox" name="q4"><label id="franklin"> B. Franklin</label>       
+        <input type="checkbox" name="q4"><label id="jefferson"> T. Jefferson</label>       
+        <input type="checkbox" name="q4"><label id="roosevelt"> T. Roosevelt</label>       
+        <div id="q4_feedback">
+            
+        </div>
+        
+        
+        
+        
+        <br><br>
+        <h2 id="total"></h2>
+        <button id="submitbtn">Submit</button>
+        
+    </body>
+    
+    <script>
+    
+        let q1_value = 25;
+        let q2_value = 25;
+        let q3_value = 25;
+        let q4_value = 25;
+
+        
+        let q1_answer = "sacramento";
+        let q2_answer = "Missouri";
+        let q3_answer = "Rhode Island";
+        
+        
+        $("#submitbtn").on("click", function(){
+            let total_points = 0;
+          // alert($("#q1").val()); 
+          
+           let q1_response = $("#q1").val().toLowerCase();
+           let q2_response = $("#q2").val();
+           let q3_response = $("input[name=q3]:checked").val();
+            
+            //Question1
+        
+           if(q1_response == q1_answer){
+               $("#q1_feedback").html("Correct!");
+               total_points += q1_value;
+           }
+           else{
+               $("#q1_feedback").html("Incorrect");
+           }
+          //Question2
+
+           if(q2_response == q2_answer){
+               $("#q2_feedback").html("Correct!");
+               total_points += q2_value;
+           }
+           else{
+               $("#q2_feedback").html("Incorrect");
+           }
+            
+            //Question3
+
+           if(q3_response == q3_answer){
+               $("#q3_feedback").html("Correct!");
+               total_points += q3_value;
+           }
+           else{
+               $("#q3_feedback").html("Incorrect");
+           }
+           
+           //Question4
+           
+           if(document.getElementById('jefferson').checked && document.getElementById('roosevelt')){
+               $("#q4_feedback").html("Correct!");
+               total_points += q4_value;
+           }
+           else{
+               $("#q4_feedback").html("Incorrect");
+           }
+           
+           
+           
+           
+           
+           
+           
+           
+            $("#total").html("The total Score is: " + total_points);
+
+        });
+        
+    </script>
+    
+</html>
