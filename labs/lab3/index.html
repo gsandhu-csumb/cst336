@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <!--Gurjot Sandhu-->
     <head>
         <title> US Geography Quiz </title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -98,23 +99,23 @@
              q5_response = $(this).attr("id");
         });
         
-        // function isFormValid(){
-        //     let isValid = true;
-        //     if ($("#q2").val() == "") {
-        //         isValid = false;
-        //         $("#validSubmission").html("Question 1 not answered");
-        //     }
-        //     return isValid;
-        // }
+        function isFormValid(){
+            let isValid = true;
+            if ($("#q2").val() == "") {
+                isValid = false;
+                $("#validSubmission").html("Question 1 not answered");
+            }
+            return isValid;
+        }
         
         //On Submit
         $("#submitButton").on( "click", function() {
             
             $("#validSubmission").html("");
             
-            // if (!isFormValid()) {   
-            //     return;
-            // }
+            if (!isFormValid()) {   
+                return;
+            }
         
             let total_points = 0;
             let q1_response = $("#q1").val().toLowerCase();
