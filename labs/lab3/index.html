@@ -112,9 +112,9 @@
             
             $("#validSubmission").html("");
             
-            if (!isFormValid()) {   
-                return;
-            }
+            // if (!isFormValid()) {   
+            //     return;
+            // }
         
             let total_points = 0;
             let q1_response = $("#q1").val().toLowerCase();
@@ -189,7 +189,7 @@
                 $("#congrats").html("Congrats you've received a 100% on an attempt!!");
                 $("#congrats").attr("class", "correct");
             }else{
-                $("#congrats").html(" ");
+                $("#congrats").html("");
 
             }
             
