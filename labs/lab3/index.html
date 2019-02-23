@@ -98,14 +98,14 @@
              q5_response = $(this).attr("id");
         });
         
-        function isFormValid(){
-            let isValid = true;
-            if ($("#q2").val() == "") {
-                isValid = false;
-                $("#validSubmission").html("Question 1 not answered");
-            }
-            return isValid;
-        }
+        // function isFormValid(){
+        //     let isValid = true;
+        //     if ($("#q2").val() == "") {
+        //         isValid = false;
+        //         $("#validSubmission").html("Question 1 not answered");
+        //     }
+        //     return isValid;
+        // }
         
         //On Submit
         $("#submitButton").on( "click", function() {
@@ -189,7 +189,7 @@
                 $("#congrats").html("Congrats you've received a 100% on an attempt!!");
                 $("#congrats").attr("class", "correct");
             }else{
-                $("#congrats").html("You almost got it!!");
+                $("#congrats").html(" ");
 
             }
             
