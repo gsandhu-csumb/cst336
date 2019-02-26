@@ -133,6 +133,7 @@
         //On Submit
         $("#submitButton").on( "click", function() {
             $("#theQuestions").hide();
+            $("#submitButton").hide();
             $("#validSubmission").html("");
             
             // if (!isFormValid()) {   
@@ -302,9 +303,9 @@
             
             //Calculating Totals
             //$("#total").html("The total Score is: " + total_points);
-            totalTimes++;
-            localStorage.setItem("totalTimesTaken",totalTimes);
-            $("#totalTimes").html("Quiz taken: " + totalTimes + " time(s)");
+            // totalTimes++;
+            // localStorage.setItem("totalTimesTaken",totalTimes);
+            // $("#totalTimes").html("Quiz taken: " + totalTimes + " time(s)");
             // scoresArray.push(total_points);
             // $("#prevScores").html("Score History: ");
             // scoresArray.forEach(function(score){
