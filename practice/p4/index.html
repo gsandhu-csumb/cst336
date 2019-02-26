@@ -1,0 +1,80 @@
+<html>
+<head>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <h1> Spring Break Shopping  </h1>
+
+    <table>
+    <tr>
+        <th>Product</th>
+        <th>Unit <br> Price</th>
+        <th> Quantity </th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td>Microfiber Beach Towel</td>
+        <td>$30</td>
+        <td><input type="text" size="5"></td>
+        <td></td>
+    </tr>
+
+   <tr>
+        <td>Sunscreen 100SPF, 120ml</td>
+        <td>$10</td>
+        <td></td>
+        <td></td>
+    </tr>    
+    
+    <tr>
+        <td>Ipanema Flip-flop Sandals </td>
+        <td>$20</td>
+        <td></td>
+        <td></td>
+    </tr>
+
+   <tr>
+        <td>Shipping</td>
+        <td></td>
+        <td></td>
+        <td id="shipping"></td>
+    </tr>    
+        
+    <tr>
+        <td>Subtotal</td>
+        <td></td>
+        <td></td>
+        <td id="subtotal"></td>
+    </tr>             
+        
+    <tr>
+        <td>Tax (10%)</td>
+        <td></td>
+        <td></td>
+        <td id="tax"></td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td></td>
+        <td></td>
+        <td id="total"></td>
+    </tr>
+       
+    </table>
+    
+    <h3>Shipping & Handling</h3>
+    <select id="shipping">
+        <option value="">Select one</option>
+    </select>
+    <br><br>
+        
+    <!--<span>I accept the terms of this purchase.</span>-->
+    <input type="checkbox" id="terms"><label for="terms">I accept the terms of this purchase.</label>
+    <br> 
+    
+    <button>"CONFIRM PURCHASE"</button>
+
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+    <!--Gurjot Sandhu-->
+    <head>
+        <title> Vehicle Quiz </title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        
+        <h1 id="headTitle">Which vehicle brand suits you best?</h1>
+        <br></br>
+        <h1 id="theguess"></h1>
+        <br></br>
+    <div id="theQuestions">   
+        <!--Question1-->
+        <h2> Are you luxurious or practical? </h2>
+        <input type = "text" id="q1">
+        <div id="q1_feedback">
+        </div>
+        <br></br>
+        
+         <!--Question2-->
+        <h2> What is your purpose?</h2>
+        <input type="radio" name="q3" id="beUsed" value="beUsed"><label for="beUsed"> To get from A-B </label>
+        <!--<input type="radio" name="q3" id="toCom" value="toCom"><label for="toCom"> To commute </label>-->
+        <input type="radio" name="q3" id="beTrophy" value="beTrophy"><label for="beTrophy"> To be Admired</label>
+        <!--<input type="radio" name="q3" id="notaThing" value="notaThing"><label for="notaThing">nothing ;(</label>-->
+        <div id ="q3_feedback">
+        </div>
+        <br></br>
+        
+        
+        
+        <!--Question3-->
+        <h2>What features would you include?</h2>
+        <!--<input type="checkbox" id="tailGate"><label for="tailGate">Versatile Tailgate</label>-->
+        <input type="checkbox" id="sportsMode"><label for="sportsMode">Sports Mode</label>
+        <!--<input type="checkbox" id="ecoMode"><label for ="ecoMode">Eco Mode</label>-->
+        <input type="checkbox" id="interiorUp"><label for ="interiorUp">Upgraded Interior</label>
+        <div id = "q4_feedback">
+        </div>
+        <br></br>
+        
+        
+          <!--Question4-->
+        <h2>Which is most important to you?</h2>
+        <select id="q2">
+            <option value="">Select One</option>
+            <option>Fuel Efficiency</option>
+            <option>Style</option>
+            <!--<option>Size</option>-->
+            <!--<option>Speed</option>-->
+        </select>
+        <div id="q2_feedback">
+        </div>
+       <br></br>
+        
+        <!--Question5-->
+        <h2>What image best represents you?</h2>
+        <img src="img/electric.png" alt="electric" class="active" id="elec"> 
+        <img src="img/gas.png" alt="gas" class="active" id="gass"> 
+        <!--<img src="img/van.png" alt="Van" class="active" id="van"> -->
+        <div id = "q5_feedback">
+        </div>
+        <br></br>
+        
+         <!--Question6-->
+        <h2>Which country do you like the most?</h2>
+        <select id="q6">
+        <option value="">Select One</option>
+          <option >USA</option>
+          <option >Germany</option>
+          <!--<option value="japan">Japan</option>-->
+        </select> 
+        <div id = "q6_feedback">
+        </div>
+        <br></br>
+   </div>      
+        <h2 id = "total"></h2>
+        <button id="submitButton"> Submit </button>
+        <h2 id ="congrats"></h2>
+        <h2 id="validSubmission"></h2>
+        <h2 id = "totalTimes"></h2>
+        <h3 id="prevScores"></h3>
+    </body>
+    
+    <script>
+    
+        //Declaring Values
+        // let q1_value = 20;
+        // let q2_value = 20;
+        // let q3_value = 20;
+        // let q4_value = 20;
+        // let q5_value = 20;
+        let q1_answer = "luxurious";
+        let q1_answerb = "practical";
+        let q2_answer = "Style";
+        let q2_answerb = "Fuel Efficiency";
+        let q3_answer = "beUsed";
+        let q3_answerb = "beTrophy";
+        let q5_answer = "gass";
+        let q5_answerb = "elec";
+        let q6_answer = "USA";
+        let q6_answerb = "Germany";
+        let q5_response = "";
+        let totalTimes = localStorage.getItem("totalTimesTaken");
+        // let scoresArray =  localStorage.getItem("scoreHistory");
+        // if (scoresArray == null) {
+        //     scoresArray = [];
+        // } else {
+        //     scoresArray = scoresArray.split(","); 
+        // }
+        
+        //Making picture background yellow
+        $(".active").on( "click", function() {
+             $(".active").css("background","");
+             $(this).css("background","lightblue");
+             q5_response = $(this).attr("id");
+        });
+        
+        // function isFormValid(){
+        //     let isValid = true;
+        //     if ($("#q2").val() == "") {
+        //         isValid = false;
+        //         $("#validSubmission").html("Question 1 not answered");
+        //     }
+        //     return isValid;
+        // }
+        
+        //On Submit
+        $("#submitButton").on( "click", function() {
+            $("#theQuestions").hide();
+            $("#validSubmission").html("");
+            
+            // if (!isFormValid()) {   
+            //     return;
+            // }
+        
+            // let total_points = 0;
+            let q1_response = $("#q1").val().toLowerCase();
+            let q2_response = $("#q2").val();
+            let q3_response = $("input[name=q3]:checked").val();
+            let q6_response = $("#q6").val();
+
+            if(q1_response == "" || q2_response == "" || q3_response == ""){
+                alert("Please answer all questions");
+            }
+            
+            if(q1_response == q1_answer && q5_response == q5_answer && q6_response == q6_answerb){
+                $("#theguess").html("MERCEDES-BENZ");
+            }
+            if(q1_response == q1_answer && q5_response == q5_answerb && q6_response == q6_answerb){
+                $("#theguess").html("BMW");
+            }
+            if(q1_response == q1_answer && q5_response == q5_answer && q6_response == q6_answer){
+                $("#theguess").html("CADILLAC");
+            }
+            if(q1_response == q1_answer && q5_response == q5_answerb && q6_response == q6_answer){
+                $("#theguess").html("TESLA");
+            }
+            if(q1_response == q1_answerb && q5_response == q5_answer && q6_response == q6_answerb){
+                $("#theguess").html("VOLKSWAGEN");
+            }
+            if(q1_response == q1_answerb && q5_response == q5_answerb && q6_response == q6_answerb){
+                $("#theguess").html("OPEL");
+            }
+            if(q1_response == q1_answerb && q5_response == q5_answer && q6_response == q6_answer){
+                $("#theguess").html("FORD");
+            }
+            if(q1_response == q1_answerb && q5_response == q5_answerb && q6_response == q6_answer){
+                $("#theguess").html("BRAMMO");
+            }
+            
+            //Question 1
+            if(q1_response == q1_answer) {
+                $("#q1_feedback").html("Sweet you got style!");
+                // total_points += q1_value;
+                // $("#markImg1").html("<img src ='img/checkmark.png' alt='checkmark'>");
+                $("#q1_feedback").attr("class", "correct");
+            }
+            if(q1_response == q1_answerb) {
+              $("#q1_feedback").html("Your simple I like you!");
+                //$("#markImg1").html("<img src ='img/xmark.png' alt='xmark'>");
+                $("#q1_feedback").attr("class", "incorrect");
+            }
+            // else {
+            //     $("#q1_feedback").html("Your simple I like you!");
+            //     //$("#markImg1").html("<img src ='img/xmark.png' alt='xmark'>");
+            //     $("#q1_feedback").attr("class", "incorrect");
+            // }
+            
+            //Question 2
+            if (q2_response == q2_answer) {
+                $("#q2_feedback").html("Awesome!");
+                // total_points += q2_value;
+                // $("#markImg2").html("<img src ='img/checkmark.png' alt='checkmark'>");
+                $("#q2_feedback").attr("class", "correct");
+            }
+            if (q2_response == q2_answerb) {
+                $("#q2_feedback").html("Still Cool!");
+                //$("#markImg2").html("<img src ='img/xmark.png' alt='xmark'>");
+                $("#q2_feedback").attr("class", "incorrect");
+            }
+            
+            if (q3_response == q3_answer) {
+                $("#q3_feedback").html("Back to practical!");
+                // total_points += q2_value;
+                // $("#markImg2").html("<img src ='img/checkmark.png' alt='checkmark'>");
+                $("#q3_feedback").attr("class", "correct");
+            }
+            if (q3_response == q3_answerb) {
+                $("#q3_feedback").html("Admirable");
+                //$("#markImg2").html("<img src ='img/xmark.png' alt='xmark'>");
+                $("#q3_feedback").attr("class", "incorrect");
+            }
+            // else {
+            //     $("#q2_feedback").html("Still Cool!");
+            //     //$("#markImg2").html("<img src ='img/xmark.png' alt='xmark'>");
+            //     $("#q2_feedback").attr("class", "incorrect");
+            // }
+            
+            // //Question 3
+            // if (q3_response == q3_answer) {
+            //     $("#q3_feedback").html("Correct!");
+            //     total_points += q3_value;
+            //     $("#markImg3").html("<img src ='img/checkmark.png' alt='checkmark'>");
+            //     $("#q3_feedback").attr("class", "correct");
+            // }
+            // else {
+            //     $("#q3_feedback").html("Incorrect!");
+            //     $("#markImg3").html("<img src ='img/xmark.png' alt='xmark'>");
+            //     $("#q3_feedback").attr("class", "incorrect");
+            // }
+            
+            // //Question 4
+            // if ($("#Jefferson").is(":checked") && $("#Roosevelt").is(":checked") && !$("#Jackson").is(":checked")&& !$("#Franklin").is(":checked")){
+            //     $("#q4_feedback").html("Correct!");
+            //     total_points+=q4_value;
+            //     $("#markImg4").html("<img src ='img/checkmark.png' alt='checkmark'>");
+            //     $("#q4_feedback").attr("class", "correct");
+            // } else {
+            //       $("#q4_feedback").html("Incorrect!");
+            //       $("#markImg4").html("<img src ='img/xmark.png' alt='xmark'>");
+            //       $("#q4_feedback").attr("class", "incorrect");
+                   
+            // }
+            
+             //Question 4
+             if ($("#sportsMode").is(":checked") && !$("#interiorUp").is(":checked")){
+                 $("#q4_feedback").html("LETS GO FAST!");
+                //  total_points+=q4_value;
+                //  $("#markImg4").html("<img src ='img/checkmark.png' alt='checkmark'>");
+                 $("#q4_feedback").attr("class", "correct");
+             }
+            if (!$("#sportsMode").is(":checked") && $("#interiorUp").is(":checked")){
+                  $("#q4_feedback").html("EXQUISITE!");
+                  //$("#markImg4").html("<img src ='img/xmark.png' alt='xmark'>");
+                  $("#q4_feedback").attr("class", "incorrect");
+             }
+            
+            //Question 5
+            if (q5_response == q5_answer) {
+                $("#q5_feedback").html("Fossil Fuels!");
+                // total_points += q5_value;
+                // $("#markImg5").html("<img src ='img/checkmark.png' alt='checkmark'>");
+                $("#q5_feedback").attr("class", "incorrect");
+            } 
+            if (q5_response == q5_answerb) {
+              $("#q5_feedback").html("WERE SAVING THE WORLD!");
+                //$("#markImg5").html("<img src ='img/xmark.png' alt='xmark'>");
+                $("#q5_feedback").attr("class", "correct");
+            }
+            
+             if (q6_response == q6_answer) {
+                $("#q6_feedback").html("USA!USA!USA!");
+                // total_points += q5_value;
+                // $("#markImg5").html("<img src ='img/checkmark.png' alt='checkmark'>");
+                $("#q6_feedback").attr("class", "incorrect");
+            } 
+            if (q6_response == q6_answerb) {
+              $("#q6_feedback").html("I knew you liked style!");
+                //$("#markImg5").html("<img src ='img/xmark.png' alt='xmark'>");
+                $("#q6_feedback").attr("class", "correct");
+            }
+            // else {
+            //     $("#q5_feedback").html("WERE SAVING THE WORLD!");
+            //     //$("#markImg5").html("<img src ='img/xmark.png' alt='xmark'>");
+            //     $("#q5_feedback").attr("class", "correct");
+            // }
+            
+            // //Congrats
+            // if(q1_response == q1_answer && q2_response == q2_answer && q3_response == q3_answer && q5_response == q5_answer && $("#Jefferson").is(":checked") && $("#Roosevelt").is(":checked")){
+            //     $("#congrats").html("Congrats you've received a 100% on an attempt!!");
+            //     $("#congrats").attr("class", "correct");
+            // }else{
+            //     $("#congrats").html("");
+
+            // }
+            
+            //Calculating Totals
+            //$("#total").html("The total Score is: " + total_points);
+            totalTimes++;
+            localStorage.setItem("totalTimesTaken",totalTimes);
+            $("#totalTimes").html("Quiz taken: " + totalTimes + " time(s)");
+            // scoresArray.push(total_points);
+            // $("#prevScores").html("Score History: ");
+            // scoresArray.forEach(function(score){
+            //     $("#prevScores").append(score + " ");
+            // });
+            // localStorage.setItem("scoreHistory",scoresArray);
+        });
+    </script>
+</html>
