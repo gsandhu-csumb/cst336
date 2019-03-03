@@ -1,0 +1,31 @@
+body{
+    text-align: left;
+    background-color:lightblue;
+    font-family: 'Quantico', sans-serif;
+}
+#signUpTitle{
+    text-align: center;
+    color:black;
+}
+.correct {
+    color: green;
+    font-size: 18pt;
+}
+
+.incorrect {
+    color: red;
+    font-size: 18pt;
+}
+ #submit{
+     color:green;
+ }
+ #zipError{
+    color: red;
+    font-size: 18pt;
+}
+fieldset{ 
+    background-color: white;
+}
+#city,#longitude,#latitude{
+    color: blue;
+}
