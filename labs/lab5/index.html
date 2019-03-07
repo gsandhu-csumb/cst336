@@ -2,13 +2,16 @@
 <html>
     <head>
         <title> Sign Up - PHP Web API Version </title>
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link href = "https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <script>
             /*global $*/
             
             $(document).ready(function() {
+                
                 $("#username1").change(function() {
                     $.ajax({
                         type: "GET",
@@ -34,11 +37,11 @@
                         success: function(data,status) {
                         //alert(data);
                             if(data.available){
-                                $("#username2Error").html("Username is available!");
+                                $("#username2Error").html("Username Available!");
                                 $("#username2Error").css("color", "green");
                             }
                             else {
-                                $("#username2Error").html("Username is unavailable!");
+                                $("#username2Error").html("Username Unavailable!");
                                 $("#username2Error").css("color", "red");
                             }
                         },
@@ -47,30 +50,101 @@
                         }
                     
                     });//ajax  
-                });
+                });//username2 change
+                
+                 $("#password").on("click", function(){
+                    
+                    //alert("hi");
+                    
+                    $.ajax({
+
+                        type: "GET",
+                        url: "api/strongPwdAPI.php",
+                        dataType: "json",
+                        data: {"length" : "10" },
+                        success: function(data,status) {
+                          
+                          //alert(data.suggestedPwd);
+                          $("#passwordSuggAlert").html("Suggested Password:")
+                          $("#passwordSugg").html(data.suggestedPwd);
+                          $("#passwordSugg").css("color", "green");
+                        
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                        
+                    });//ajax
+                    
+                }); //passwordClick 
+                
+                
+             $("#password").on("change", function(){
+                    
+                    //alert("hi");
+                    
+                    $.ajax({
+
+                        type: "GET",
+                        url: "api/validatePwd.php",
+                        dataType: "json",
+                        data: {"username" : $("#username1").val(),
+                               "pwd" : $("#password").val()
+                        },
+                        success: function(data,status) {
+                            if(data.validPwd == false){
+                          $("#passwordSugg2").html("Username is part of password!!");
+                          $("#passwordSugg2").css("color", "red");
+                        }else{
+                             $("#passwordSugg2").html(" ");
+                        }
+                    
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                        
+                    });//ajax
+                    
+                }); //passwordClick   
+                
+            $("#submitButton").on("click", function(){
+                alert("Account Created Successfully!")
             });
+                    
+            });//documentReady
+            
+            
+            
+           
+            
+            
         </script>
     </head>
     
     <body>
         <fieldset>
-            <legend>
+            <legend id="signupbutton">
                 Sign Up
             </legend>
-            
-            First Name: <input type="text" id="firstName" name="firstName" /> <br />
-            Last Name: <input type="text" id="lastName" name="lastName" /> <br />
-            
-            Username: <input type="text" id="username1" />
+            <br><br/>
+            <div id="nameFirst">First Name: </div><input type="text" id="firstName" name="firstName" /> <br />
+            <br><br/>
+            <div id="nameLast">Last Name: </div><input type="text" id="lastName" name="lastName" /> <br />
+            <br><br/>
+            <div id="nameUser">Username: </div><input type="text" id="username1" />
             <span id="username1Error"></span> <br />
-            
-            Username: <input type="text" id="username2" />
+            <br><br/>
+            <div id="nameUser2">Username: </div><input type="text" id="username2" />
             <span id="username2Error" class="error"></span> <br />
             <br />
-            
-            Password: <input type="password" id="password"> <br />
-            
-            <button> Sign up!</button>
+            <br><br/>
+            <div id="passWord">Password: </div><input type="password" id="password"/> 
+            <span id="passwordSuggAlert" class="error"></span>
+            <span id="passwordSugg" class="error"></span><br> 
+            <span id="passwordSugg2" class="error"></span><br />
+            <br />
+            <button id="submitButton"> Sign up!</button>
         </fieldset>
     </body>
 </html>
