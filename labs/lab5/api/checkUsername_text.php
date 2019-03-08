@@ -16,10 +16,12 @@ array_push($usernames, "maria", "john");
 
 //Checking whether a username is included within the "$usernames" array
 if(in_array(strtolower($_GET['username']), $usernames)) {
-    echo "Not Available!";
+    echo '<span style="color:red;text-align:center;">Not Available!</span>';
+    //echo "Not Available!";
     
 }
 else{
-    echo "Available!";
+    echo '<span style="color:green;text-align:center;">Available!</span>';
+    //echo "Available!";
 }
 ?>
