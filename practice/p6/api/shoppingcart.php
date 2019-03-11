@@ -1,16 +1,5 @@
 <?php
 
-// $state = array();
-// $state["state"] = "California";
-// $state["capital"] = "Sacramento";
-// //echo json_encode($state);
-// $stateArray = array();
-//array_push($stateArray, $state);
-// $state["state"] = "Illinois";
-// $state["capital"] = "SpringField";
-// array_push($stateArray, $state);
-// echo json_encode($stateArray[rand(0,1)]);
-
 $products = array();
 $products["products"] = "Flip-flop Sandals";
 $products["prices"] = "30";
