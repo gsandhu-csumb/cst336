@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<script>
+        $(document).ready(function() {
+                $("#productPrice").change(function() {
+                    $.ajax({
+                        type: "GET",
+                        url: "api/shoppingcart.php",
+                        data: { "productsArray":$("#productPrice").val() },
+                        success: function(data,status) {
+                            //$("#username1Error").html(data);
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                    
+                    });//ajax
+                });
+         });
+</script>
+<body>
+    <table style="width:100%">
+    <h1> Spring Break Shopping  </h1>
+    <table>
+    <tr>
+        <th>Product</th>
+        <th>Unit <br> Price</th>
+        <th> Quantity </th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td>Flip-flop Sandals</td>
+        <td>$30</td>
+        <td><input type="text" id= productPrice size="5"></td>
+        <td></td>
+    </tr>
+    
+    <tr>
+        <td>Discount</td>
+        <td></td>
+        <td>50%</td>
+        <td id="discountD"></td>
+    </tr> 
+    
+    <tr>
+        <td>Subtotal</td>
+        <td></td>
+        <td></td>
+        <td id="subtotal"></td>
+    </tr>             
+        
+    <tr>
+        <td>Tax (10%)</td>
+        <td></td>
+        <td></td>
+        <td id="tax"></td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td></td>
+        <td></td>
+        <td id="total"></td>
+    </tr>
+       
+    </table>
+    <br><br>
+        
+    <!--<span>I accept the terms of this purchase.</span>-->
+    <!--<input type="checkbox" id="terms"><label for="terms">I accept the terms of this purchase.</label>-->
+    <!--<br> -->
+    <h2 id=promoCode>Promo Code:<input type="text"</h2>
+
+</body>
+</html>

@@ -9,7 +9,7 @@ header('Access-Control-Allow-Origin: *');
 //echo $_GET['username'];
 
 $usernames = array("eeny", "meeny");
-$usernaames[] = "miny";  //adding a new element at the end of the array
+$usernames[] = "miny";  //adding a new element at the end of the array
 array_push($usernames, "maria", "john");
 
 //print_r($usernames)

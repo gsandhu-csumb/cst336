@@ -1,0 +1,22 @@
+[08-Mar-2019 01:19:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php(9): PDO->__construct('mysql:host=loca...', 'root', ' ')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php on line 9
+[08-Mar-2019 01:20:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database '4dbname'' in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php(9): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php on line 9
+[08-Mar-2019 01:26:33 UTC] PHP Fatal error:  Call to a member function setAttribute() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php on line 13
+[08-Mar-2019 01:26:33 UTC] PHP Stack trace:
+[08-Mar-2019 01:26:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php:0
+[08-Mar-2019 01:27:07 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php on line 16
+[08-Mar-2019 01:27:07 UTC] PHP Stack trace:
+[08-Mar-2019 01:27:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php:0
+[08-Mar-2019 01:27:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php on line 16
+[08-Mar-2019 01:27:10 UTC] PHP Stack trace:
+[08-Mar-2019 01:27:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php:0
+[08-Mar-2019 01:27:17 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php on line 16
+[08-Mar-2019 01:27:17 UTC] PHP Stack trace:
+[08-Mar-2019 01:27:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/getProducts.php:0

@@ -1,0 +1,24 @@
+[11-Mar-2019 19:47:09 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php on line 11
+[11-Mar-2019 19:47:09 UTC] PHP Stack trace:
+[11-Mar-2019 19:47:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:0
+[11-Mar-2019 19:47:09 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:11
+[11-Mar-2019 19:47:36 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php on line 11
+[11-Mar-2019 19:47:36 UTC] PHP Stack trace:
+[11-Mar-2019 19:47:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:0
+[11-Mar-2019 19:47:36 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:11
+[11-Mar-2019 19:51:23 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php on line 8
+[11-Mar-2019 19:51:23 UTC] PHP Stack trace:
+[11-Mar-2019 19:51:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:0
+[11-Mar-2019 19:51:23 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:8
+[11-Mar-2019 19:51:23 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php on line 17
+[11-Mar-2019 19:51:23 UTC] PHP Stack trace:
+[11-Mar-2019 19:51:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:0
+[11-Mar-2019 19:51:23 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:17
+[11-Mar-2019 19:51:23 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php on line 20
+[11-Mar-2019 19:51:23 UTC] PHP Stack trace:
+[11-Mar-2019 19:51:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:0
+[11-Mar-2019 19:51:23 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:20
+[11-Mar-2019 19:52:08 UTC] PHP Warning:  array_push() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php on line 8
+[11-Mar-2019 19:52:08 UTC] PHP Stack trace:
+[11-Mar-2019 19:52:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:0
+[11-Mar-2019 19:52:08 UTC] PHP   2. array_push() /home/ubuntu/workspace/cst336/practice/p6/api/shoppingcart.php:8
