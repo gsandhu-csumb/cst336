@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+
+#products, .modal{
+    text-align: center;
+    background-color: lightblue;
+}
+
+#bulkBody{
+    text-align: left;
+    background-color: lightblue;
+
+}
+#searchForm{
+    background-color: darkblue;
+    color: white;
+}
+
+

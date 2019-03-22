@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8"/>
         <title> Lab 6: Ottermart Product Search</title>
+        <!--<link href="css/styles.css rel= "stylessheet" type = "text/css" "/>-->
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+        <link rel="stylesheet" href="css/styles.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
         <script>
-        
+            
             $(document).ready(function(){
+                
+                //Gets first 10 products from the database and displays them
                 $.ajax({
 
                     type: "GET",
@@ -13,36 +23,141 @@
                     dataType: "json",
                     success: function(data,status) {
                       //alert(data[0].productName);
-                      for (i = 0; i < data.length; i++) {
-                          $("#products").append(data[i].price + " " + data[i].productName + "<br>");
-                          
-                      }
-                    //   data.forEach(function(product){
-                          
-                    //       $("#products").append(product.productName + "<br>");
-                          
-                    //   })
+                      data.forEach(function(product){
+                          $("#products").append("<div class='row'>" + 
+                                                "<div class='col1'>" + product.productName + "</div>"+
+                                                "<div class='col2'>"+ "$" + product.productPrice + "</div>"+
+                                                "</div>");
+                      });
                     },
-                    complete: function(data,status) { //optional, used for debugging purposes
+                    complete: function(data, status) { //optional, used for debugging purposes
                     //alert(status);
                     }
                     
                 });//ajax
                 
-            
-            });//documentReady
-            
+                
+                //Gets Category list from database and displays them in the dropdown menu
+                $.ajax({
+                    type: "GET",
+                    url: "api/getCategories.php",
+                    dataType: "json",
+                    success: function(data, status) {
+                        data.forEach(function(key) {
+                            $("#categories").append("<option value=" + key["catId"] + ">" + key["catName"] + "</option>");
+                        });
+                    }
+                }); 
+                
+                $("#searchForm").on("click", function(){
+                 $.ajax({
+                    type: "GET",
+                    url: "api/getSearchResults.php",
+                    dataType: "json",
+                    data:{
+                        "product": $("[name=product]").val(),
+                        "description": $("[name=description]").val(),
+                        'category': $("[name=category]").val(),
+                        "priceFrom": $("[name=priceFrom]").val(),
+                        "priceTo": $("[name=priceTo]").val(),
+                        "orderBy": $("[name=orderBy]:checked").val(),
+                    },
+                    success: function(data, status) {
+                    $("#products").html("<h3> Products Found: </h3>");
+                        data.forEach(function(key) {
+                            $("#products").append("<a href='#' class = 'historyLink' id = '" + key['productId'] + "'>History </a>");
+                            $("#products").append(key['productName'] + " " + key['productDescription'] + " $" + key['productPrice'] + "<br>");
+                        });
+                    }
+                 });
+                });
+                
+                 $(document).on("click", ".historyLink", function() {
+                $("#purchaseHistoryModal").modal("show");
+                $.ajax({
+                    type: "GET",
+                    url: "api/getPurchaseHistory.php",
+                    dataType: "json",
+                    data: { "productId": $(this).attr("id") },
+                    success: function(data, status) {
+                        if (data.length != 0) {
+                            $("#history").html("");
+                            $("#history").append(data[0]['productName'] + "<br />");
+                            $("#history").append("<img src = '" + data[0]['productImage'] + "'width = '200' /> <br />");
+                            data.forEach(function(key) {
+                                $("#history").append("Purchase Date: " + key['purchaseDate'] + "<br />");
+                                $("#history").append("Unit Price: " + key['unitPrice'] + "<br />");
+                                $("#history").append("Quantity: " + key['quantity'] + "<br />");
+                            });
+                        }
+                        else {
+                            $("#history").html("No purchase history for this item.");
+                        }
+                    }
+                }); 
+            });
+        });
         </script>
+
+        <style>
+        
+            .row  { display:flex; }
+        
+            .col1 { width:250px; }
+
+        </style>           
         
     </head>
     <body>
 
-        <h1> Product Search </h1>
+        <h1> Ottermart Product Search </h1>
         
-        <div id="products">
-            
-            
-        </div>
+        <div id="bulkBody">
+               Product: <input type="text" name="product" id="product" /><br>
+               
+               Description: <input type="text" name="description" id="description" /><br>
+               
+               Category:
+                    <select name="category" id="categories">
+                        <option value=""> Select One </option>
+                    </select>
+                <br>
+                Price:  From <input type="text" name="priceFrom" size="7"/>
+                        To   <input type="text" name="priceTo" size="7"/>
+                <br>
+                Order result by:
+                <br>
+                <input type="radio" name="orderBy" value="price"/> Price <br>
+                <input type="radio" name="orderBy" value="name"/> Name
+                <br><br>
+          
+                <button id="searchForm">Search</button>        
+        </div>        
+                <br><hr><br>
+                
+                <div id="products"></div>
 
-    </body>
+                <div id="purchaseHistoryModal" class="modal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title">Product History</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden = "true">&times;</span>
+                            </button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <div id="history"></div>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
