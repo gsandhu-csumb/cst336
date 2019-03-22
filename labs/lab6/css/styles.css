@@ -2,21 +2,25 @@ h1{
     text-align: center;
     background-color: darkblue;
     color: white;
+    font-family: 'Quantico', sans-serif;
 }
 
 #products, .modal{
     text-align: center;
     background-color: lightblue;
+    font-family: 'Quantico', sans-serif;
 }
 
 #bulkBody{
     text-align: left;
     background-color: lightblue;
+    font-family: 'Quantico', sans-serif;
 
 }
 #searchForm{
     background-color: darkblue;
     color: white;
+    font-family: 'Quantico', sans-serif;
 }
 
 
