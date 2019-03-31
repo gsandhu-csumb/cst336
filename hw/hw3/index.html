@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Car Selector </title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link href = "https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <style>
+            body{
+                text-align: center;
+                background-color:lightblue;
+                font-family: 'Quantico', sans-serif;
+            }
+            th {
+              background-color: darkblue;
+              color: white;
+              font-size: 2em;
+              border: 1px;
+              padding: 8px;
+            }
+            td{
+                font-size: 1.5em;
+                background-color: lightgray;
+            }
+            h1, h2, h3{
+                text-align: center;
+                color: white;
+                font-family: 'Quantico', sans-serif;
+            }
+            img:hover {
+                opacity: 0.25;
+                transition: 0.3s;
+            
+            }
+            #mainHeading{
+                color:lightblue;
+                background-color:black;
+            }
+            #carList{
+                font-size: 2em;
+
+            }
+            #dataCartable{
+                display: none;
+
+            }
+            #subtotal, #tax, #total{
+                font-size: 3em;
+                color: green;
+            }
+             #wrapper {
+              display: flex;
+            }
+            
+            #left {
+              flex: 0 0 65%;
+            }
+            
+            #right {
+              flex: 1;
+            }
+            /*th {*/
+            /*  background-color: darkblue;*/
+            /*  color: white;*/
+            /*}*/
+            #productTable {
+              width: 100%;
+            }
+
+                .column {
+                  /*float: left;*/
+                  padding: 5px;
+                }
+                
+                 /*Clearfix (clear floats) */
+               
+            /*th {*/
+            /*  background-color: darkblue;*/
+            /*  color: white;*/
+            /*}*/
+        </style>
+        <script>
+        /* global $ */
+        let tax = .15;
+        let total = 0;
+        let subtotal = 0;
+        let taxedAmount = 0;
+        let productPrice = 0;
+        let amountProduct = 0;
+        let totalPriceProduct = 0;
+            $(document).ready(function(){
+                $("#submitButton").on( "click", function() { 
+                    document.getElementById("dataCartable").style.display = "block";
+                    // $("#carImg").append("<img src='" + ['productImage'] + "' width='50' /> <br />");
+                    $("#submitButton").hide();
+                });$.ajax({
+                    type: "GET",
+                    url: "api/carListapi.php",
+                    dataType: "json",
+                    success: function(data, status){
+                        data.forEach(function(key) {
+                            $("[name=product]").append("<option value="+key["productId"]+">"+key["productName"]+"</option>");
+                    });}
+                }); $("#carList").on("change", function(){
+                    $.ajax({
+                    type: "GET",
+                    url: "api/priceOfproduct.php",
+                    dataType: "json",
+                    data: {"product" : $("[name=product]").val()},
+                    success: function(data, status){
+                        //alert(data);
+                        $("#hideDiv").hide();
+                        $("#recommendedProduct").html("<a href='#' class='description'id='"+data[0]["productId"]+"'>"+data[0]["productName"]+"</a>");
+                        $("#chosenVehicle").html("<a href='#' class='description' id='"+data[0]["productId"]+"'>"+data[0]["productName"]+"</a>");
+                        $("#vehiclePrice").html(data[0]['productPrice']);
+                        // if(data[1]["productId"]){
+                        //     $('#carImgs').prepend('<img id="benz" src="mercedesBenz.png" />');
+                        // }
+                        // if(data[2]["productId"]){
+                        //     $('#carImgs').prepend('<img id="benz" src="mercedesBenz.png" />');
+                        // }
+                        // if(data[3]["productId"]){
+                        //     $('#carImgs').prepend('<img id="benz" src="mercedesBenz.png" />');
+                        // }
+                        // if(data[4]["productId"]){
+                        //     $('#carImgs').prepend('<img id="benz" src="mercedesBenz.png" />');
+                        // }
+                        // if(data[5]["productId"]){
+                        //     $('#carImgs').prepend('<img id="benz" src="mercedesBenz.png" />');
+                        // }
+                        productPrice = data[0]['productPrice'];
+                        totalPriceProduct=productPrice*amountProduct+0;
+                        $("#totalForProduct").html(totalPriceProduct);
+                        simplicityFunc();
+                    }});
+                });$.ajax({
+                    type: "GET",
+                    url: "api/recommendedVehicle.php",
+                    dataType: "json",
+                    success: function(data, status){
+                        $("#recommendedProduct").html("<a href='#' class='description' id='" + data.productId + "'>" + data.productName + "</a>");
+                        $("#chosenVehicle").html("<a href='#' class='description' id='" + data[0]["productId"] + "'>" + data[0]["productName"] + "</a>");
+                        $("#vehiclePrice").html(data.productPrice);
+                        productPrice = data.productPrice;
+                    }
+                });
+                $(document).on('click', '.description', function(){
+                    $('#purchaseHistoryModal').modal("show");
+                    $.ajax({
+                        type: "GET",
+                        url: "api/carInformation.php",
+                        dataType: "json",
+                        data: {"productId" : $(this).attr("id")},
+                        success: function(data, status) {
+                            if (data.length != 0) { // Checks if the API returned a non-empty list
+                                $("#history").html(""); // clears content
+                                $("#history").append(data[0]['productDescription'] + "<br />");
+                                $("#history").append("<img src='" + data[0]['productImage'] + "' width='200' /> <br />");
+                            }
+                        }});
+                    }); $("#qty").on("change", function(){
+                        $.ajax({
+                        type: "GET",
+                        url: "api/recommendedVehicle.php",
+                        dataType: "json",
+                        success: function(data,status) {
+                        //alert(data)
+                        amountProduct=$("#qty").val();
+                            totalPriceProduct = productPrice * amountProduct;
+                            $("#totalForProduct").html(totalPriceProduct);
+                            simplicityFunc();
+                        },
+                        complete: function(data,status) { }});});});
+            function simplicityFunc(){subtotal=totalPriceProduct;$("#subtotal").html("$" + subtotal);
+            taxedAmount=subtotal*tax;$("#tax").html("$" + taxedAmount);
+            total=subtotal+taxedAmount;$("#total").html("$" + total);}
+        </script>
+    </head>
+    <!--<body background="img/carsPix.png">-->
+    <body>
+        <h1 id="mainHeading" class="jumbotron"> WholeSale Car Selector </h1>
+            <img src="img/bmw.png" alt="car2" >
+            <img src="img/caddy.png" alt="car3"  >
+            <img src="img/mercedesBenz.png" alt="car4" >
+            <img src="img/versa.png" alt="car5" >
+            <img src="img/avenger.png" alt="car1" >
+        <div id="hideDiv">
+        <h2>Our Featured Recommendation!</h2>
+        <h3 id="recommendedProduct"></h3>
+        </div>
+        <h2>Which Fleet Suits Your Needs?</h2>
+        <select name="product" id="carList">
+            <option value="">Select One</option>
+        </select>
+        <!--<h2 id="unitPrice" ></h2>-->
+        <!--<h2 id="productTotal" ></h2>-->
+        <br></br>
+        <table id="productTable">
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Select Amount of Units</th>
+                <th>Total</th>
+            </tr>
+            <tr>
+                <td class="row" id="chosenVehicle"></td>
+                <td class="row" id="vehiclePrice"></td>
+                <td class="row">Choose Amount-><input type="text" id="qty"></td>
+                <td class="row">$<span id="totalForProduct"></span></td>
+            </tr>
+        </table>
+        <br>
+        <div id="dataCartable">
+                <div class="modal" tabindex="-1" role="dialog" id="vehicleImg">
+                </div><div id="carImg"></div>
+                <h2>Subtotal: </h2> <span id="subtotal"> </span>
+                <h2>Tax (15%): </h2> <span id="tax"> </span>
+                <h2>Total: </h2> <span id="total"> </span></div>
+        <br><br>
+        <button id="submitButton"> Submit </button>
+       </div>
+       </div>
+        <div class="modal" tabindex="-1" role="dialog" id="purchaseHistoryModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Car Information</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="history"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

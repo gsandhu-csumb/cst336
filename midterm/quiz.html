@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Midterm Exam</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        
+        <script>
+        /* global $ */
+            $(document).ready(function(){
+                
+                $.ajax({
+                    type: "GET",
+                    url: "api/getQuestion.php",
+                    dataType: "json",
+                    success: function(data, status){
+                        data.forEach(function(key) {
+                            $("[name=question]").append("<option value=" + key["questionId"] + ">"
+                                                                + key["questionText"] + "</option>");
+                        });
+                    }
+                });
+
+                $.ajax({
+                    type: "GET",
+                    url: "api/getRandomQuestion.php",
+                    dataType: "json",
+                    success: function(data, status){
+                        $("#quizRandomQuestions").html(data.questionText);
+                    }
+                }); // get random question
+            });
+        </script>
+        
+    </head>
+    <body>
+        <h1 class="jumbotron"> US Quiz </h1>
+        <main>
+            <figure id = "me">
+            <img src = "img/river.png" alt ="quizpicttures" />
+            </figure>
+            <div class = "quizBody">
+                <div id=quizQuestions></div>
+                <h2 id="quizQuestions" ></h2>
+                <select name="question" id="qId">
+                        <option value="">Select One</option>
+                </select>
+                <br><br>
+                <button id="checkAnswer"> Check Answer </button> <br><br>
+                <button id="getHint"> Show Hint </button> <br><br>
+            </div>
+                <button id="nextQuestion"> Next Question </button>
+                <br><br>
+        </main>
+       <br><br>
+       
+    <table id=rubricTable border="1" width="600">
+    <tbody><tr><th>#</th><th>Task Description</th><th>Points</th></tr>
+    <tr style="background-color:#FCCEC6">
+      <td>1</td>
+      <td>When the page loads a random question with its image and choices is displayed using a Web API</td>
+      <td width="20" align="center">20</td>
+    </tr>
+    <tr style="background-color:#FCCEC6">
+      <td>2</td>
+      <td>The random question text, choices and image is coming from the database</td>
+      <td width="20" align="center">10</td>
+    </tr> 
+    <tr style="background-color:#FCCEC6">
+      <td>3</td>
+      <td>The question is displayed in a two-column layout </td>
+      <td align="center">10</td>
+    </tr>    
+	<tr style="background-color:#FCCEC6">
+      <td>4</td>
+      <td>An error message in red is shown if no choice is selected </td>
+      <td align="center">5</td>
+    </tr> 
+    <tr style="background-color:#FCCEC6">
+      <td>5</td>
+      <td>If the answer is right, the corresponding feedback is displayed in green using an API</td>
+      <td align="center">15</td>
+    </tr>
+    <tr style="background-color:#FCCEC6">
+      <td>6</td>
+      <td>If the answer is wrong, an "incorrect" message is displayed in red, including the value selected </td>
+      <td align="center">10</td>
+    </tr>       
+    <tr style="background-color:#FCCEC6">
+      <td>7</td>
+      <td>The score is updated properly: Adding 20 points if right, subtracting 5 if wrong</td>
+      <td align="center">10</td>
+    </tr>  
+    <tr style="background-color:#FCCEC6">
+      <td>8</td>
+      <td>The buttons are hidden/displayed properly </td>
+      <td align="center">10</td>
+    </tr>  
+    <tr style="background-color:#FCCEC6">
+      <td>9</td>
+      <td>The corresponding hint is displayed properly, using AJAX and an API</td>
+      <td align="center">15</td>
+    </tr>    
+    <tr style="background-color:#FCCEC6">
+      <td>10</td>
+      <td>A new random question is displayed when clicking on the "New Question" button </td>
+      <td align="center">15</td>
+    </tr>        
+    <tr style="background-color:#FCCEC6">
+      <td>11</td>
+      <td>The new random question is different from the current question displayed </td>
+      <td align="center">10</td>
+    </tr> 
+    <tr style="background-color:#cdfcc6">
+      <td>12</td>
+      <td>The page has a nice design (similar to the sample) </td>
+      <td align="center">5</td>
+    </tr>  
+    <tr style="background-color:#cdfcc6">
+      <td>13</td>
+      <td>This rubric is properly included AND UPDATED (BONUS)</td>
+      <td width="20" align="center">3</td>
+    </tr>     
+     <tr>
+      <td></td>
+      <td>T O T A L </td>
+      <td width="20" align="center"><b>138</b></td>
+    </tr> 
+  </tbody></table>
+  
+  </body>
+
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Practice 7 </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <script>
+        /* global $ */
+        /* global forEach */
+        let productTotal = 0;
+        let subtotal = 0;
+        let taxedTotal = 0;
+        let discountTotal = 0;
+        let total = 0;
+        let price = 0;
+        let qty = 0;
+        let tax = .10;
+        let promo = false;
+        function makeLifeEasier(){
+            subtotal =  productTotal - discountTotal;
+            $("#subtotal").html("$" + subtotal);
+            taxedTotal = subtotal * tax ;
+            $("#tax").html("$" + taxedTotal);
+            total = subtotal + taxedTotal;
+            $("#total").html("$" + total);
+        }
+            $(document).ready(function(){
+                
+                $.ajax({
+                    type: "GET",
+                    url: "api/getProducts.php",
+                    dataType: "json",
+                    success: function(data, status){
+                        data.forEach(function(key) {
+                            $("[name=product]").append("<option value=" + key["productId"] + ">"
+                                                                + key["productName"] + "</option>");
+                        });
+                    }
+                }); // get products
+                
+                $("#pId").on("change", function(){
+                    $.ajax({
+                    type: "GET",
+                    url: "api/getProductPrice.php",
+                    dataType: "json",
+                    data: {"product" : $("[name=product]").val()},
+                    success: function(data, status){
+                        //alert(data);
+                        $("#randomProduct").html("<a href='#' class='description' id='" + data[0]["productId"] + "'>" + data[0]["productName"] + "</a>");
+                        $("#randomProductPrice").html(data[0]['productPrice']);
+                        price = data[0]['productPrice'];
+                        productTotal = price * qty + 0;
+                        $("#randomProductTotal").html(productTotal);
+                        
+                        makeLifeEasier();
+                    }
+                    });
+                   
+                    $.ajax({
+                        type: "GET",
+                        url: "api/applyPromoCode.php",
+                        dataType: "json",
+                        success: function(data,status) {
+                        //alert(data);
+                        promo = false;
+                        data.forEach(function(key){
+                            if($("#promoCode").val() == key["promoCode"]) {
+                                $("#discount").html("" + key["discount"] + "%");
+                                discountTotal = productTotal * (key["discount"] / 100);
+                                $("#discountTotal").html(discountTotal);
+                                promo = true;
+                                $("#promoExpire").html("" + key["expirationDate"]);
+                                $("#promoError").html("");
+                            }
+                        });
+                        if($("#promoCode").val() == ""){
+                             $("#discount").html("");
+                             $("#promoError").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                        }
+                        else if(!promo){
+                            $("#promoError").html("Code is incorrect. Please try again!");
+                            $("#discount").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                                promo = false;
+                        }
+                        makeLifeEasier();
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                    
+                    });//ajax
+                    
+                }); // searchForm
+                
+                $.ajax({
+                    type: "GET",
+                    url: "api/getRandomProducts.php",
+                    dataType: "json",
+                    success: function(data, status){
+                        $("#randomProduct").html("<a href='#' class='description' id='" + data.productId + "'>" + data.productName + "</a>");
+                        $("#randomProductPrice").html(data.productPrice);
+                        price = data.productPrice;
+                    }
+                }); // get random product
+                
+                $.ajax({
+                    type: "GET",
+                    url: "api/getRandomPromo.php",
+                    dataType: "json",
+                    success: function(data, status){
+                        $("#promoCode").val(data.promoCode);
+                    }
+                }); // get random product
+                
+                $.ajax({
+                        type: "GET",
+                        url: "api/applyPromoCode.php",
+                        dataType: "json",
+                        success: function(data,status) {
+                        //alert(data);
+                        promo = false;
+                       data.forEach(function(key){
+                            if($("#promoCode").val() == key["promoCode"]) {
+                                $("#discount").html("" + key["discount"] + "%");
+                                discountTotal = productTotal * (key["discount"] / 100);
+                                $("#discountTotal").html(discountTotal);
+                                promo = true;
+                                $("#promoExpire").html("" + key["expirationDate"]);
+                                $("#promoError").html("");
+                            }
+                        });
+                        if($("#promoCode").val() == ""){
+                             $("#discount").html("");
+                             $("#promoError").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                        }
+                        else if(!promo){
+                            $("#promoError").html("Code is incorrect. Please try again!");
+                            $("#discount").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                                
+                        }
+                        makeLifeEasier();
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                    
+                    });//ajax
+                
+                $(document).on('click', '.description', function(){
+                    $('#purchaseHistoryModal').modal("show");
+                    $.ajax({
+                        type: "GET",
+                        url: "api/getProductInfo.php",
+                        dataType: "json",
+                        data: {"productId" : $(this).attr("id")},
+                        success: function(data, status) {
+                            if (data.length != 0) { // Checks if the API returned a non-empty list
+                                $("#history").html(""); // clears content
+                                $("#history").append(data[0]['productDescription'] + "<br />");
+                                $("#history").append("<img src='" + data[0]['productImage'] + "' width='200' /> <br />");
+                            }
+                        }
+                    })
+                }); // product Info
+                
+                $("#promoCode").on("change", function(){
+                   $.ajax({
+                        type: "GET",
+                        url: "api/applyPromoCode.php",
+                        dataType: "json",
+                        success: function(data,status) {
+                        //alert(data);
+                        promo = false;
+                       data.forEach(function(key){
+                            if($("#promoCode").val() == key["promoCode"]) {
+                                $("#discount").html("" + key["discount"] + "%");
+                                discountTotal = productTotal * (key["discount"] / 100);
+                                $("#discountTotal").html(discountTotal);
+                                promo = true;
+                                $("#promoExpire").html("" + key["expirationDate"]);
+                                $("#promoError").html("");
+                            }
+                        });
+                        if($("#promoCode").val() == ""){
+                             $("#discount").html("");
+                             $("#promoError").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                        }
+                        else if(!promo){
+                            $("#promoError").html("Code is incorrect. Please try again!");
+                            $("#discount").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                                
+                        }
+                        makeLifeEasier();
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                    
+                    });//ajax
+                });
+                $("#qty").on("change", function(){
+                    $.ajax({
+                    type: "GET",
+                    url: "api/getRandomProducts.php",
+                    dataType: "json",
+                    success: function(data,status) {
+                    //alert(data)
+                    qty = $("#qty").val();
+                        productTotal = price * qty;
+                        $("#randomProductTotal").html(productTotal);
+                        makeLifeEasier();
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    //alert(status);
+                    }
+                    });//ajax
+                    $.ajax({
+                        type: "GET",
+                        url: "api/applyPromoCode.php",
+                        dataType: "json",
+                        success: function(data,status) {
+                        //alert(data);
+                        promo = false;
+                        data.forEach(function(key){
+                            if($("#promoCode").val() == key["promoCode"]) {
+                                $("#discount").html("" + key["discount"] + "%");
+                                discountTotal = productTotal * (key["discount"] / 100);
+                                $("#discountTotal").html(discountTotal);
+                                promo = true;
+                                $("#promoExpire").html("" + key["expirationDate"]);
+                                $("#promoError").html("");
+                            }
+                        });
+                        if($("#promoCode").val() == ""){
+                             $("#discount").html("");
+                             $("#promoError").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                        }
+                        else if(!promo){
+                            $("#promoError").html("Code is incorrect. Please try again!");
+                            $("#discount").html("");
+                                discountTotal = 0;
+                                $("#discountTotal").html(discountTotal);
+                                $("#promoExpire").html("");
+                                promo = false;
+                        }
+                        makeLifeEasier();
+                        },
+                        complete: function(data,status) { //optional, used for debugging purposes
+                        //alert(status);
+                        }
+                    
+                    });//ajax
+                    
+                });
+                
+                
+            }); // documentReady
+        </script>
+    </head>
+    <body>
+        <h1 class="jumbotron"> Midterm Practice </h1>
+        
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Unit Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+            </tr>
+            
+            <tr>
+                <td class="row" id="randomProduct"></td>
+                <td class="row" id="randomProductPrice"></td>
+                <td class="row"><input type="text" id="qty"></td>
+                <td class="row"><span id="randomProductTotal"></span></td>
+            </tr>
+            
+            <tr>
+                <td class="row">
+                    <select name="product" id="pId">
+                        <option value="">Select One</option>
+                    </select>
+                </td>
+                <td class="row" id="unitPrice"></td>
+                <td class="row"><input type="text" id="qty2"></td>
+                <td class="row" id="productTotal"></td>
+            </tr>
+            
+            <tr >
+                <td class="row">Discount</td>
+                <td class="row"></td>
+                <td class="row" id="discount"></td>
+                <td id="discountTotal" class="row"></td>
+            </tr>    
+                
+            <tr>
+                <td class="row">Subtotal</td>
+                <td class="row"></td>
+                <td class="row"></td>
+                <td id="subtotal" class="row"></td>
+            </tr>             
+                
+            <tr>
+                <td class="row">Tax (10%)</td>
+                <td class="row"></td>
+                <td class="row"></td>
+                <td id="tax" class="row"></td>
+            </tr>
+            
+            <tr>
+                <td class="row">Total</td>
+                <td class="row"></td>
+                <td class="row"></td>
+                <td id="total" class="row"></td>
+            </tr>
+        </table>
+        
+        <div>
+            Promo Code: <input type="text" id="promoCode">
+        </div>
+        <div id="promoError"></div>
+        Promo Expires on: <span id="promoExpire"></span>
+        
+        <div class="modal" tabindex="-1" role="dialog" id="purchaseHistoryModal">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Product Info</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="history"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
