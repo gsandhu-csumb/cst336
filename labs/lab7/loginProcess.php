@@ -25,8 +25,9 @@ $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so
  
  if (empty($record)) {
      
-     echo "Username or Password are incorrect!";
-     
+    //  $message = "Invalid Login";
+    //  echo "<script type='text/javascript'>alert('$message');</script>";
+     header('location: login2.html'); //redirecting to a new file
      
  }  else {
  

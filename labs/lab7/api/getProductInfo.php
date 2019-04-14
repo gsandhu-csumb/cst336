@@ -14,4 +14,3 @@
     echo json_encode($product);
 
 ?>
-

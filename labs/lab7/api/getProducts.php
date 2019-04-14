@@ -1,18 +1,6 @@
 <?php
-
-//header('Access-Control-Allow-Origin: *');
-
-$host = "localhost";
-$dbname = "ottermart";
-$username = "root";
-$password = "";
-
-// Establishing a connection
-$dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
-// Setting Errorhandling to Exception
-$dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
-
+include '../../../inc/dbConnection.php';
+$conn = getDatabaseConnection("ottermart");
 $sql = "SELECT * FROM om_product ORDER BY productPrice";
 $stmt = $dbConn -> prepare($sql);  //$connection MUST be previously initialized
 $stmt->execute();
