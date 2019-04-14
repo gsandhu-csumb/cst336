@@ -1,3 +1,15 @@
+<?php
+session_start();
+
+//checks whether user has logged in
+if (!isset($_SESSION['adminName'])) {
+    
+    header('location: login.html'); //sends users to login screen if they haven't logged in
+    
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -15,17 +27,15 @@
         <br/>
         Product Price: <input type="text" id="productPrice">
         <br/>
-        Categories Name: <select id = "catId">
-        <option> Select One </option>
-        </select>
-        <br>
+        Categories Name: <Select id = "catId">
+        <Option> Select One </Option>
+        </Select><br>
         
         <button id="submitButton">Add Product</button>
-        
+        <span id="totalProducts"></span>
     </body>
     
     <script>
-    /*global $*/
         $.ajax({
                     type: "GET",
                     url: "../lab6/api/getCategories.php",
@@ -51,9 +61,7 @@
                         
                     },
                     success: function(data, status) {
-                        data.forEach(function(key) {
-                            $("#catId").append("<option value=" + key["catId"] + ">" + key["catName"] + "</option>");
-                        });
+                        $("#totalProducts").html(data.totalproducts + " Products");
                     }
                 }); 
         });

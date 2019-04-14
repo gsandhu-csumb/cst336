@@ -10,9 +10,15 @@ $conn = getDatabaseConnection("ottermart");
 $username = $_POST['username'];
 $password = sha1($_POST['password']);
 
-$sql = "SELECT * FROM om_admin WHERE username = '$username' AND password = '$password'";
+$sql = "SELECT * FROM om_admin WHERE username = :username AND password = :password";
+
+$namedParameters = array();
+$namedParameters[':username'] = $username;
+$namedParameters[':password'] = $password;
+
+
 $stmt = $conn->prepare($sql);
-$stmt->execute();
+$stmt->execute($namedParameters);
 $record = $stmt->fetch(PDO::FETCH_ASSOC); //we are expecting ONLY one record, so we use fetch instead of fetchAll
 
 // print_r($record);
