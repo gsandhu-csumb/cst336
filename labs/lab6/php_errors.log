@@ -366,3 +366,15 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php(18): PDOStatement->execute()
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 18
+[16-Apr-2019 17:06:52 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 30
+[16-Apr-2019 17:06:52 UTC] PHP Stack trace:
+[16-Apr-2019 17:06:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:0
+[16-Apr-2019 17:07:02 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 30
+[16-Apr-2019 17:07:02 UTC] PHP Stack trace:
+[16-Apr-2019 17:07:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:0
+[16-Apr-2019 17:09:34 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 30
+[16-Apr-2019 17:09:34 UTC] PHP Stack trace:
+[16-Apr-2019 17:09:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:0
+[16-Apr-2019 17:15:58 UTC] PHP Fatal error:  Call to a member function setAttribute() on a non-object in /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php on line 15
+[16-Apr-2019 17:15:58 UTC] PHP Stack trace:
+[16-Apr-2019 17:15:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab6/api/getProducts.php:0

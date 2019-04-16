@@ -1,0 +1,33 @@
+[16-Apr-2019 17:10:28 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:10:28 UTC] PHP Stack trace:
+[16-Apr-2019 17:10:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:11:18 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:11:18 UTC] PHP Stack trace:
+[16-Apr-2019 17:11:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:11:19 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:11:19 UTC] PHP Stack trace:
+[16-Apr-2019 17:11:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:11:35 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:11:35 UTC] PHP Stack trace:
+[16-Apr-2019 17:11:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:11:46 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:11:46 UTC] PHP Stack trace:
+[16-Apr-2019 17:11:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:11:51 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:11:51 UTC] PHP Stack trace:
+[16-Apr-2019 17:11:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:11:57 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:11:57 UTC] PHP Stack trace:
+[16-Apr-2019 17:11:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:12:10 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:12:10 UTC] PHP Stack trace:
+[16-Apr-2019 17:12:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:12:25 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:12:25 UTC] PHP Stack trace:
+[16-Apr-2019 17:12:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:12:51 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:12:51 UTC] PHP Stack trace:
+[16-Apr-2019 17:12:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0
+[16-Apr-2019 17:13:04 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php on line 5
+[16-Apr-2019 17:13:04 UTC] PHP Stack trace:
+[16-Apr-2019 17:13:04 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/api/getProducts.php:0

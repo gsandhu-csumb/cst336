@@ -2,14 +2,15 @@
 
 //header('Access-Control-Allow-Origin: *');
 
-$host = "localhost";
-$dbname = "ottermart";
-$username = "root";
-$password = "";
+// $host = "localhost";
+// $dbname = "ottermart";
+// $username = "root";
+// $password = "";
 
-// Establishing a connection
-$dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
-
+// // Establishing a connection
+// $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
+include '../../../inc/dbConnection.php';
+$dbConn = getDatabaseConnection("ottermart");
 // Setting Errorhandling to Exception
 $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
 
