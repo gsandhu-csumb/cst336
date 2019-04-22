@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Pixabay API Demo </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<style>
+body {
+text-align: center;
+}
+img {
+    border-radius: 20px;
+    padding:15px;
+}
+.favorite{
+    cursor: pointer;
+}
+</style>
+<script>
+
+    function searchImage() {
+    
+        $("#images").html("Loading...");
+        
+        $.ajax({
+             method: "GET",
+                url: "api/pixabayProxy.php",
+            dataType: "json",
+                data: { "keyword":$("#keyword").val() },
+             success: function(data, status) {
+               
+                let htmlString = "";
+                let i = 0;
+                $("#images").html("");
+                for (let rows=0; rows < 3; rows++) {
+                    
+                    htmlString += "<div class='row'>";
+                    
+                    for (let cols=0; cols < 3; cols++) {
+                        
+                      htmlString +=   "<img class='favorite' src='img/favorite.png' width='30'>";
+                       htmlString +=  "<img src='"+ data[i++]+"' width='300' height='280'>";
+                        
+                    }//for
+                    
+                    htmlString += "</div>";
+                    
+                }//for
+               
+               $("#images").append(htmlString);
+               
+            }
+        }); //ajax 
+        
+    }//searchImage()
+    
+    
+    $(document).ready(function(){
+        
+        $("#images").on("click", ".favorite", function(){ 
+            
+            //alert($(this).next().attr("src"));
+            
+            if ( $(this).attr("src") == "img/favorite.png") {
+            
+                $(this).attr("src","img/favorite_on.png");
+                //add image url to database
+                callFavoriteAPI("add",$(this).next().attr("src"));
+            } else {
+                
+                $(this).attr("src","img/favorite.png");
+                //remove image url from database
+                callFavoriteAPI("delete",$(this).next().attr("src"));
+                
+            }
+            
+        });
+    
+        
+        function callFavoriteAPI(action, url, keyword) {
+            
+            
+        }
+    
+        
+    });//documentReady
+    
+
+</script>
+</head>
+<body>
+
+<h1> Pixabay Image Search </h1>
+Keyword: <input type="text" id="keyword"/> 
+<button onclick="searchImage()"> Search </button>
+<br /><br />
+
+<div id="images"></div>
+
+</body>
+</html>
