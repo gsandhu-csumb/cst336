@@ -5,25 +5,23 @@
         <link href = "https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script>
         /* global $ */
-        
-         function searchMovie() {
+        function searchMovie() {
         $.ajax({
              method: "GET",
+                //url: "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
                 url: "api/database.php",
             dataType: "json",
                 data: { "keyword":$("#keyword").val() },
              success: function(data, status) {
-                //$("#title").html(data.Title);
-                
-            }}); //ajax 
-        
-    }//searchImage()
-        
-        
-        
+                $("#title").html(data.Title);
+                $("#year").html(data.Year);
+                $("#genre").html(data.Genre);
+                $("#rating").html(data.Rated);
+                $("#director").html(data.Director);
+            }}); //ajax
+        }//searchImage()
         </script>
         
     </head>
@@ -37,9 +35,11 @@
                 <button onclick="searchMovie()"> Search </button>
             </form>
             <br/>
+            Movie Year: <span id="year"></span> <br><br/>
             Movie Name: <span id="title"></span> <br><br/>
-            Movie Year: <span id="year"></span>  <br><br/>
-            Movie Genre: <span id="genre"></span> <br/>
+            Movie Genre: <span id="genre"></span> <br><br/>
+            Movie Rating: <span id="rating"></span> <br><br/>
+            Movie Director: <span id="director"></span> <br><br/>
         </div>
     </body>
 </html>
