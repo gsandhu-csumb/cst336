@@ -4,8 +4,8 @@
 $keyword = $_GET['keyword'];
 $curl = curl_init();
       curl_setopt_array($curl, array(
-      CURLOPT_URL => "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
-      //CURLOPT_URL => "http://www.omdbapi.com/?t=$keyword&apikey=95af1eac",
+      //CURLOPT_URL => "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
+      CURLOPT_URL => "http://www.omdbapi.com/?t=$keyword&apikey=95af1eac",
       CURLOPT_RETURNTRANSFER => true,
       CURLOPT_TIMEOUT => 30,
       CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
