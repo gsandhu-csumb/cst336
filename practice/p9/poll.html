@@ -4,6 +4,7 @@
 <head>
     <title> CSUMB Poll </title>
     <meta charset="utf-8" />
+    
 </head>
 
 <body>
@@ -18,39 +19,43 @@
 
     <!--placeholder to display here chart-->
     <div id="container"></div>
+
     <!-- scripts -->
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
     <script>
+        /*global $*/
+        $("#q1").on("click", function(){
+            let pollRes;
+            pollRes = ("$input[name=q1]:checked").val();
+/**********/if(pollRes == "Strongly Disagree")
+            {
+                $("#submitButton").on("click", function(){
+                       //alert("test");
+                       $.ajax({
+                        type: "GET",
+                        url: "functions.php",
+                        dataType: "json",
+                        data : {"choice": pollRes
+                        },
+                        success: function(data, status) {
+                            
+                        }
+                        
+                    }); //end ajax add
+                });//end submit
+            }
+        });
         //Here is an example call to display the chart
         //You may need to parse to int if using strings
-        
+        displayPollChart(parseInt("10"),20,30,40,50);
         //******
         // Displays poll chart. For more info about charts visit https://www.highcharts.com/demo
         // Parameters:
         // option1 to option5 must be integers, represent the total users who selected each option
         //*******
-        $(document).ready(function(){
-           $("#q1").on("click", function() {
-               $.ajax({
-                    type: "GET",
-                    url: "functions.php",
-                    dataType: "json",
-                    data : {"pollId": "q1",
-                        "option1": $("[name=option1]:checked").val(),
-                        "option2": $("[name=option2]:checked").val(),
-                        "option3": $("[name=option3]:checked").val(),
-                        "option4": $("[name=option4]:checked").val(),
-                        "option5": $("[name=option5]:checked").val()
-                    },
-                    success: function(data, status) {
-                        alert(data);
-                    }
-                }); 
-               displayPollChart(parseInt("option1"), parseInt("option2"), parseInt("option3"), parseInt("option4"), parseInt("option5"));
-           });
-        });
         function displayPollChart(option1, option2, option3, option4, option5) {
             Highcharts.chart('container', {
                 chart: {
@@ -73,11 +78,7 @@
                             enabled: true,
                             format: '<b>{point.name}</b>: {point.percentage:.1f} %',
                             style: {
-                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                            }
-                        }
-                    }
-                },
+                                color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'}}}},
                 series: [{
                     name: 'q1s',
                     colorByPoint: true,
@@ -88,21 +89,13 @@
                         selected: true
                     }, {
                         name: 'Disagree',
-                        y: option2,
-                    }, {
+                        y: option2,}, {
                         name: 'Neutral',
-                        y: option3
-                    }, {
+                        y: option3}, {
                         name: 'Agree',
-                        y: option4
-                    }, {
+                        y: option4}, {
                         name: 'Strongly Agree',
-                        y: option5
-                    }, ]
-                }]
-            });
-        } //endFunction
+                        y: option5},]}]});}
         </script>
 </body>
-
 </html>

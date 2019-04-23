@@ -1,0 +1,180 @@
+[23-Apr-2019 07:41:57 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:41:57 UTC] PHP Stack trace:
+[23-Apr-2019 07:41:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:41:57 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:41:57 UTC] PHP Stack trace:
+[23-Apr-2019 07:41:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:41:57 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:41:57 UTC] PHP Stack trace:
+[23-Apr-2019 07:41:57 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:41:58 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:41:58 UTC] PHP Stack trace:
+[23-Apr-2019 07:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:41:58 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:41:58 UTC] PHP Stack trace:
+[23-Apr-2019 07:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:41:58 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:41:58 UTC] PHP Stack trace:
+[23-Apr-2019 07:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:42:03 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:42:03 UTC] PHP Stack trace:
+[23-Apr-2019 07:42:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:42:03 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:42:03 UTC] PHP Stack trace:
+[23-Apr-2019 07:42:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:42:03 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:42:03 UTC] PHP Stack trace:
+[23-Apr-2019 07:42:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:39 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:39 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:39 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:39 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:39 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:53:39 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:40 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:40 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:40 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:40 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:40 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:53:40 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:53:46 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:53:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:53:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:54:46 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:54:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:54:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:54:46 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:54:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:54:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:54:46 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:54:46 UTC] PHP Stack trace:
+[23-Apr-2019 07:54:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:56:01 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:56:01 UTC] PHP Stack trace:
+[23-Apr-2019 07:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:56:01 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:56:01 UTC] PHP Stack trace:
+[23-Apr-2019 07:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:56:01 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:56:01 UTC] PHP Stack trace:
+[23-Apr-2019 07:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:56:19 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:56:19 UTC] PHP Stack trace:
+[23-Apr-2019 07:56:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:56:19 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:56:19 UTC] PHP Stack trace:
+[23-Apr-2019 07:56:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:56:19 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:56:19 UTC] PHP Stack trace:
+[23-Apr-2019 07:56:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:59:59 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:59:59 UTC] PHP Stack trace:
+[23-Apr-2019 07:59:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:59:59 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 07:59:59 UTC] PHP Stack trace:
+[23-Apr-2019 07:59:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 07:59:59 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 07:59:59 UTC] PHP Stack trace:
+[23-Apr-2019 07:59:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(../../dbConnection.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Warning:  include(): Failed opening '../../dbConnection.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 2
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0
+[23-Apr-2019 08:00:00 UTC] PHP Fatal error:  Call to undefined function getDatabaseConnection() in /home/ubuntu/workspace/cst336/hw/hw4/database.php on line 3
+[23-Apr-2019 08:00:00 UTC] PHP Stack trace:
+[23-Apr-2019 08:00:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/database.php:0

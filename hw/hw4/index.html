@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Movie Search </title>
+        <link href = "https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script>
+        /* global $ */
+        
+         function searchMovie() {
+        $.ajax({
+             method: "GET",
+                url: "api/database.php",
+            dataType: "json",
+                data: { "keyword":$("#keyword").val() },
+             success: function(data, status) {
+                //$("#title").html(data.Title);
+                
+            }}); //ajax 
+        
+    }//searchImage()
+        
+        
+        
+        </script>
+        
+    </head>
+    <body>
+        <div class="container">
+            <h1>OMDb Moive Search</h1>
+            <form>
+                <!--<input type="text" id="searchBar" placeholder="Movie Title"/>-->
+                <!--<button type="button" name="search" id="searchBtn">Search</button>-->
+                Keyword: <input type="text" id="keyword"/> 
+                <button onclick="searchMovie()"> Search </button>
+            </form>
+            <br/>
+            Movie Name: <span id="title"></span> <br><br/>
+            Movie Year: <span id="year"></span>  <br><br/>
+            Movie Genre: <span id="genre"></span> <br/>
+        </div>
+    </body>
+</html>
