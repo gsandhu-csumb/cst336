@@ -8,7 +8,10 @@
         <script>
         /* global $ */
         function searchMovie() {
-        $.ajax({
+        /*
+        $(document).ready(function(){
+            $("#searchBtn").on("click", function(){
+                $.ajax({
              method: "GET",
                 //url: "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
                 url: "api/database.php",
@@ -21,6 +24,24 @@
                 $("#rating").html(data.Rated);
                 $("#director").html(data.Director);
             }}); //ajax
+            });
+        });
+        */
+        var keywordSpace = $("#keyword").val().replace(/ /g, "%20");
+        $.ajax({
+             method: "GET",
+                //url: "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
+                url: "api/database.php",
+            dataType: "json",
+                data: { "keyword":keywordSpace },
+             success: function(data, status) {
+                $("#title").html(data.Title);
+                $("#year").html(data.Year);
+                $("#genre").html(data.Genre);
+                $("#rating").html(data.Rated);
+                $("#director").html(data.Director);
+                $("#movieImg").html("<img src =" + data.Poster + ">") ;
+            }}); //ajax
         }//searchImage()
         </script>
         
@@ -28,18 +49,22 @@
     <body>
         <div class="container">
             <h1>OMDb Moive Search</h1>
-            <form>
                 <!--<input type="text" id="searchBar" placeholder="Movie Title"/>-->
                 <!--<button type="button" name="search" id="searchBtn">Search</button>-->
+                
                 Keyword: <input type="text" id="keyword"/> 
-                <button onclick="searchMovie()"> Search </button>
-            </form>
-            <br/>
+                
+                <button onclick='searchMovie()'id="searchBtn"> Search </button>
+            <br><br/>
+            <div id="movieInfo">
             Movie Year: <span id="year"></span> <br><br/>
             Movie Name: <span id="title"></span> <br><br/>
             Movie Genre: <span id="genre"></span> <br><br/>
             Movie Rating: <span id="rating"></span> <br><br/>
             Movie Director: <span id="director"></span> <br><br/>
+            </div>
+            <div id="movieImg"></div> <br><br/>
+            Number of movies searched: <span id="moviesList"></span> <br><br/>
         </div>
     </body>
 </html>
