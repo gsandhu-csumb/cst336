@@ -3,11 +3,16 @@ body {
     background-color:pink;
     color:white;
 }
-h1, movieInfo{
+h1{
     color: black;
 }
-p{
-    color:red;
+span{
+    font-family: 'Quantico', sans-serif;;
+    color: black;
+}
+movies_List{
+    color: red;
+
 }
 .container {
     text-align: center;

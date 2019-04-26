@@ -3,10 +3,13 @@
     <head>
         <title> Movie Search </title>
         <link href = "https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href = "https://fonts.googleapis.com/css?family=Quantico" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
         /* global $ */
+        let moviePlacer = 0;
+        var titleHolder;
         function searchMovie() {
         /*
         $(document).ready(function(){
@@ -35,13 +38,51 @@
             dataType: "json",
                 data: { "keyword":keywordSpace },
              success: function(data, status) {
+                titleHolder = data.Title;
                 $("#title").html(data.Title);
                 $("#year").html(data.Year);
+                $("#plot").html(data.Plot);
                 $("#genre").html(data.Genre);
                 $("#rating").html(data.Rated);
                 $("#director").html(data.Director);
+                $("#awards").html(data.Awards);
                 $("#movieImg").html("<img src =" + data.Poster + ">") ;
+            
+            $.ajax({
+             method: "GET",
+                //url: "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
+            url: "api/saveInfo.php",
+            dataType: "json",
+                data: { "title":titleHolder },
+             success: function(data, status) {
+    
+            }});
+            
             }}); //ajax
+            // $.ajax({
+            //  method: "GET",
+            //     //url: "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
+            //     url: "api/saveInfo.php",
+            // dataType: "json",
+            //     data: { "title":$("#keyword").val() },
+            //  success: function(data, status) {
+    
+            // }});
+            if(moviePlacer>0){
+             $.ajax({
+             type: "GET",
+                //url: "http://www.omdbapi.com/?t=batman&apikey=95af1eac",
+            url: "api/findData.php",
+            dataType: "json",
+            //data: { "title":$("#keyword").val() },
+            success: function(data, status) {
+            // data.forEach(function(moiveMaker){
+            //          $("#movies_List").append(moiveMaker.productName +", ");
+            //      });
+                $("#movies_List").html(data.productName);
+            }});
+            }
+            moviePlacer++;
         }//searchImage()
         </script>
         
@@ -56,15 +97,18 @@
                 
                 <button onclick='searchMovie()'id="searchBtn"> Search </button>
             <br><br/>
+            Last Movie Searched: <span id="movies_List"></span> <br><br>
             <div id="movieInfo">
-            Movie Year: <span id="year"></span> <br><br/>
             Movie Name: <span id="title"></span> <br><br/>
-            Movie Genre: <span id="genre"></span> <br><br/>
+            Movie Year: <span id="year"></span> <br><br/>
             Movie Rating: <span id="rating"></span> <br><br/>
             Movie Director: <span id="director"></span> <br><br/>
+            Movie Genre: <span id="genre"></span> <br><br/>
+            Movie Plot: <span id="plot"></span> <br><br/>
+            Movie Awards: <span id="awards"></span> <br><br/>
             </div>
+            <br>
             <div id="movieImg"></div> <br><br/>
-            Number of movies searched: <span id="moviesList"></span> <br><br/>
         </div>
     </body>
 </html>

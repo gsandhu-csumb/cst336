@@ -1,0 +1,649 @@
+[25-Apr-2019 17:32:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 17:32:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 17:32:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 17:32:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:13:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:13:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:13:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:13:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:14:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:14:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:14:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:14:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:16:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:16:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:16:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:16:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:16:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:17:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:17:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:17:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:27:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:27:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:27:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:28:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php:10
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php(10): PDO->__construct('mysql:host=;dbn...', NULL, NULL)
+#1 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(3): getDatabaseConnection('moviesDatabase')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/dbConnection.php on line 10
+[25-Apr-2019 23:30:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''moviesList' ORDER BY `productName` DESC' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(7): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php on line 7
+[25-Apr-2019 23:30:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''moviesList' ORDER BY `productName` DESC' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(7): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php on line 7
+[25-Apr-2019 23:32:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''moviesList' ORDER BY `productName` DESC' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php:7
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php(7): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/findData.php on line 7
+[25-Apr-2019 23:35:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:36:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:36:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:36:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:36:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:36:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:37:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:37:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(14): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 14
+[25-Apr-2019 23:39:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES (The Avengers)' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:39:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES (Batman)' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:39:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES (Batman)' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:41:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Batman')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:41:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:51:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Batman')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:51:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:51:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:51:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:52:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Batman')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:52:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:52:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:54:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Batman')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:57:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Batman')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:57:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:57:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:57:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Banana')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:58:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Batman')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:58:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[25-Apr-2019 23:58:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Banana')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[26-Apr-2019 00:03:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('Batman')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[26-Apr-2019 00:03:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES ('The Avengers')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[26-Apr-2019 00:06:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES (':title')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[26-Apr-2019 00:06:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES (':title')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[26-Apr-2019 00:06:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES (':title')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[26-Apr-2019 00:06:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''productName') VALUES (':title')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(13): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 13
+[26-Apr-2019 00:09:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:09:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:11:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:11:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:11:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:14:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:14:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:14:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:23:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:23:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:23:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:24:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:24:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:25:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:25:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:25:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:25:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:26:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:26:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:26:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:27:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Jack Ryan')' at line 2' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(15): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 15
+[26-Apr-2019 00:27:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:27:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:27:50 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Jack Ryan')' at line 2' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(15): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 15
+[26-Apr-2019 00:27:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:28:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Jack Ryan')' at line 2' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(15): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 15
+[26-Apr-2019 00:28:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:28:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Jack Ryan')' at line 2' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(15): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 15
+[26-Apr-2019 00:28:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Jack Ryan')' at line 2' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(15): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 15
+[26-Apr-2019 00:28:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:28:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 's Jack Ryan')' at line 2' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(15): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 15
+[26-Apr-2019 00:29:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:29:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:29:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:29:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:32:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:32:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:33:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:33:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:33:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:33:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:34:00 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:34:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:34:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:34:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:35:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:35:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:35:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:35:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:36:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:36:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:36:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:36:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:36:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:36:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:36:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:38:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:38:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:38:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:38:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:38:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:38:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:40:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
+[26-Apr-2019 00:40:43 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php(16): PDOStatement->fetch(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/saveInfo.php on line 16
