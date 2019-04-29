@@ -7,10 +7,10 @@
         <link href = "css/styles.css" rel="stylesheet" type = "text/css"/>
         <style>
         body {
-text-align: center;
-font-family: 'Quantico', sans-serif;
-background-color:lightblue;
-}        }
+            text-align: center;
+            font-family: 'Quantico', sans-serif;
+            background-color:lightblue;
+        }
         </style>
         <script>
         /*global $*/
