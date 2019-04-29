@@ -6,7 +6,7 @@
     include 'dbConnection.php';
     $conn = getDatabaseConnection("c9");
     $email = $_GET['email'];
-    $sql = "SELECT * FROM quiz WHERE email = $email"; 
+    //$sql = "SELECT * FROM quiz WHERE email = $email"; 
     $sql = "SELECT * FROM quiz ORDER BY email DESC"; 
     //SELECT * FROM Customers ORDER BY Country DESC;
     $stmt = $conn->prepare($sql);
