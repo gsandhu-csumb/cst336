@@ -1,0 +1,95 @@
+[07-May-2019 03:43:01 UTC] PHP Warning:  include(shell/top.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/update.php on line 1
+[07-May-2019 03:43:01 UTC] PHP Stack trace:
+[07-May-2019 03:43:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/update.php:0
+[07-May-2019 03:43:01 UTC] PHP Warning:  include(): Failed opening 'shell/top.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/update.php on line 1
+[07-May-2019 03:43:01 UTC] PHP Stack trace:
+[07-May-2019 03:43:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/update.php:0
+[07-May-2019 03:43:01 UTC] PHP Warning:  include(shell/bottom.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/update.php on line 4
+[07-May-2019 03:43:01 UTC] PHP Stack trace:
+[07-May-2019 03:43:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/update.php:0
+[07-May-2019 03:43:01 UTC] PHP Warning:  include(): Failed opening 'shell/bottom.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/update.php on line 4
+[07-May-2019 03:43:01 UTC] PHP Stack trace:
+[07-May-2019 03:43:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/update.php:0
+[07-May-2019 03:44:14 UTC] PHP Warning:  include(shell/bottom.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/update.php on line 29
+[07-May-2019 03:44:14 UTC] PHP Stack trace:
+[07-May-2019 03:44:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/update.php:0
+[07-May-2019 03:44:14 UTC] PHP Warning:  include(): Failed opening 'shell/bottom.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/update.php on line 29
+[07-May-2019 03:44:14 UTC] PHP Stack trace:
+[07-May-2019 03:44:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/update.php:0
+[08-May-2019 21:23:35 UTC] PHP Warning:  include(shell/top.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:23:35 UTC] PHP Stack trace:
+[08-May-2019 21:23:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:23:35 UTC] PHP Warning:  include(): Failed opening 'shell/top.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:23:35 UTC] PHP Stack trace:
+[08-May-2019 21:23:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:23:35 UTC] PHP Warning:  include(shell/bottom.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:23:35 UTC] PHP Stack trace:
+[08-May-2019 21:23:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:23:35 UTC] PHP Warning:  include(): Failed opening 'shell/bottom.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:23:35 UTC] PHP Stack trace:
+[08-May-2019 21:23:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:23:47 UTC] PHP Warning:  include(shell/top.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:23:47 UTC] PHP Stack trace:
+[08-May-2019 21:23:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:23:47 UTC] PHP Warning:  include(): Failed opening 'shell/top.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:23:47 UTC] PHP Stack trace:
+[08-May-2019 21:23:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:23:47 UTC] PHP Warning:  include(shell/bottom.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:23:47 UTC] PHP Stack trace:
+[08-May-2019 21:23:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:23:47 UTC] PHP Warning:  include(): Failed opening 'shell/bottom.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:23:47 UTC] PHP Stack trace:
+[08-May-2019 21:23:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:24:56 UTC] PHP Warning:  include(shell/top.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:24:56 UTC] PHP Stack trace:
+[08-May-2019 21:24:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:24:56 UTC] PHP Warning:  include(): Failed opening 'shell/top.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:24:56 UTC] PHP Stack trace:
+[08-May-2019 21:24:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:24:56 UTC] PHP Warning:  include(shell/bottom.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:24:56 UTC] PHP Stack trace:
+[08-May-2019 21:24:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:24:56 UTC] PHP Warning:  include(): Failed opening 'shell/bottom.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:24:56 UTC] PHP Stack trace:
+[08-May-2019 21:24:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:26:50 UTC] PHP Warning:  include(shell/top.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:26:50 UTC] PHP Stack trace:
+[08-May-2019 21:26:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:26:50 UTC] PHP Warning:  include(): Failed opening 'shell/top.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 1
+[08-May-2019 21:26:50 UTC] PHP Stack trace:
+[08-May-2019 21:26:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:26:50 UTC] PHP Warning:  include(shell/bottom.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:26:50 UTC] PHP Stack trace:
+[08-May-2019 21:26:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[08-May-2019 21:26:50 UTC] PHP Warning:  include(): Failed opening 'shell/bottom.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/shoeStore/admin/adminReports.php on line 111
+[08-May-2019 21:26:50 UTC] PHP Stack trace:
+[08-May-2019 21:26:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/adminReports.php:0
+[09-May-2019 00:12:15 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/shoeStore/admin/index.php on line 36
+[09-May-2019 00:12:15 UTC] PHP Stack trace:
+[09-May-2019 00:12:15 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:12:15 UTC] PHP   2. displayNumShoes() /home/ubuntu/workspace/shoeStore/admin/index.php:217
+[09-May-2019 00:12:23 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/shoeStore/admin/index.php on line 36
+[09-May-2019 00:12:23 UTC] PHP Stack trace:
+[09-May-2019 00:12:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:12:23 UTC] PHP   2. displayNumShoes() /home/ubuntu/workspace/shoeStore/admin/index.php:217
+[09-May-2019 00:12:40 UTC] PHP Fatal error:  Call to undefined function displayNumShoes() in /home/ubuntu/workspace/shoeStore/admin/index.php on line 217
+[09-May-2019 00:12:40 UTC] PHP Stack trace:
+[09-May-2019 00:12:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:13:46 UTC] PHP Fatal error:  Call to undefined function displayNumShoes() in /home/ubuntu/workspace/shoeStore/admin/index.php on line 217
+[09-May-2019 00:13:46 UTC] PHP Stack trace:
+[09-May-2019 00:13:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:13:54 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/shoeStore/admin/index.php on line 36
+[09-May-2019 00:13:54 UTC] PHP Stack trace:
+[09-May-2019 00:13:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:13:54 UTC] PHP   2. displayNumShoes() /home/ubuntu/workspace/shoeStore/admin/index.php:217
+[09-May-2019 00:14:23 UTC] PHP Fatal error:  Call to undefined function displayNumShoes() in /home/ubuntu/workspace/shoeStore/admin/index.php on line 217
+[09-May-2019 00:14:23 UTC] PHP Stack trace:
+[09-May-2019 00:14:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:14:29 UTC] PHP Fatal error:  Call to undefined function displayNumShoes() in /home/ubuntu/workspace/shoeStore/admin/index.php on line 217
+[09-May-2019 00:14:29 UTC] PHP Stack trace:
+[09-May-2019 00:14:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:14:40 UTC] PHP Fatal error:  Call to undefined function displayNumShoes() in /home/ubuntu/workspace/shoeStore/admin/index.php on line 217
+[09-May-2019 00:14:40 UTC] PHP Stack trace:
+[09-May-2019 00:14:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/admin/index.php:0
+[09-May-2019 00:15:03 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/shoeStore/admin/index.php on line 24
+[09-May-2019 00:15:07 UTC] PHP Parse error:  syntax error, unexpected 'public' (T_PUBLIC) in /home/ubuntu/workspace/shoeStore/admin/index.php on line 24

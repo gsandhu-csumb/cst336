@@ -1,8 +1,9 @@
 <?php
-
  if (!empty($_FILES)) {
+    // echo "Image size: " . $_FILES['myFile']['size'];
     if($_FILES['myFile']['size'] > 1024000){
         echo "File is too big";
+        //alert("File is too big");
     }else{
         move_uploaded_file( $_FILES['myFile']['tmp_name'], "gallery/" . $_FILES['myFile']['name']);
         $_CHECK = 1;
@@ -16,8 +17,6 @@
             echo "<a href = 'gallery/$images[$i]' width='500' ><img src = 'gallery/$images[$i]' width='100'></a>";
         }//for
     }//function
-
-
 ?>
 
 

@@ -1,0 +1,79 @@
+[09-May-2019 01:23:13 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:23:13 UTC] PHP Stack trace:
+[09-May-2019 01:23:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/create.php:0
+[09-May-2019 01:23:13 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/create.php:7
+[09-May-2019 01:23:13 UTC] PHP Fatal error:  Call to a member function lastInsertId() on a non-object in /home/ubuntu/workspace/shoeStore/api/db/dao/ProductDao.php on line 147
+[09-May-2019 01:23:13 UTC] PHP Stack trace:
+[09-May-2019 01:23:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/create.php:0
+[09-May-2019 01:23:13 UTC] PHP   2. ProductDao->insert() /home/ubuntu/workspace/shoeStore/api/product/create.php:24
+[09-May-2019 01:23:55 UTC] PHP Fatal error:  Call to a member function lastInsertId() on a non-object in /home/ubuntu/workspace/shoeStore/api/db/dao/ProductDao.php on line 147
+[09-May-2019 01:23:55 UTC] PHP Stack trace:
+[09-May-2019 01:23:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/create.php:0
+[09-May-2019 01:23:55 UTC] PHP   2. ProductDao->insert() /home/ubuntu/workspace/shoeStore/api/product/create.php:24
+[09-May-2019 01:25:03 UTC] PHP Fatal error:  Call to a member function lastInsertId() on a non-object in /home/ubuntu/workspace/shoeStore/api/db/dao/ProductDao.php on line 148
+[09-May-2019 01:25:03 UTC] PHP Stack trace:
+[09-May-2019 01:25:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/create.php:0
+[09-May-2019 01:25:03 UTC] PHP   2. ProductDao->insert() /home/ubuntu/workspace/shoeStore/api/product/create.php:24
+[09-May-2019 01:25:10 UTC] PHP Fatal error:  Call to a member function lastInsertId() on a non-object in /home/ubuntu/workspace/shoeStore/api/db/dao/ProductDao.php on line 148
+[09-May-2019 01:25:10 UTC] PHP Stack trace:
+[09-May-2019 01:25:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/create.php:0
+[09-May-2019 01:25:10 UTC] PHP   2. ProductDao->insert() /home/ubuntu/workspace/shoeStore/api/product/create.php:24
+[09-May-2019 01:25:47 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:25:47 UTC] PHP Stack trace:
+[09-May-2019 01:25:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:25:47 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:25:49 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:25:49 UTC] PHP Stack trace:
+[09-May-2019 01:25:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:25:49 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:25:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:25:51 UTC] PHP Stack trace:
+[09-May-2019 01:25:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:25:51 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:25:53 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:25:53 UTC] PHP Stack trace:
+[09-May-2019 01:25:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:25:53 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:25:54 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:25:54 UTC] PHP Stack trace:
+[09-May-2019 01:25:54 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:25:54 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:25:56 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:25:56 UTC] PHP Stack trace:
+[09-May-2019 01:25:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:25:56 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:25:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:25:58 UTC] PHP Stack trace:
+[09-May-2019 01:25:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:25:58 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:26:00 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:26:00 UTC] PHP Stack trace:
+[09-May-2019 01:26:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:26:00 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:26:01 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:26:01 UTC] PHP Stack trace:
+[09-May-2019 01:26:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:26:01 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:26:36 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:26:36 UTC] PHP Stack trace:
+[09-May-2019 01:26:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:26:36 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:27:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:27:46 UTC] PHP Stack trace:
+[09-May-2019 01:27:46 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:27:46 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:33:38 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:33:38 UTC] PHP Stack trace:
+[09-May-2019 01:33:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:33:38 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:34:29 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/ubuntu/workspace/shoeStore/api/common.php on line 7
+[09-May-2019 01:34:29 UTC] PHP Stack trace:
+[09-May-2019 01:34:29 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:0
+[09-May-2019 01:34:29 UTC] PHP   2. hasAllParams() /home/ubuntu/workspace/shoeStore/api/product/deleteItem.php:7
+[09-May-2019 01:37:55 UTC] PHP Fatal error:  Call to undefined method ProductDao::findByAmount() in /home/ubuntu/workspace/shoeStore/api/product/getByAmount.php on line 12
+[09-May-2019 01:37:55 UTC] PHP Stack trace:
+[09-May-2019 01:37:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/getByAmount.php:0
+[09-May-2019 01:41:09 UTC] PHP Fatal error:  Cannot use object of type Product as array in /home/ubuntu/workspace/shoeStore/api/db/dao/ProductDao.php on line 53
+[09-May-2019 01:41:09 UTC] PHP Stack trace:
+[09-May-2019 01:41:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/shoeStore/api/product/getByAmount.php:0
+[09-May-2019 01:41:09 UTC] PHP   2. ProductDao->findByAmount() /home/ubuntu/workspace/shoeStore/api/product/getByAmount.php:12

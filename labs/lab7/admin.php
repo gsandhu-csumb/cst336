@@ -2,11 +2,11 @@
 session_start();
 
 //checks whether user has logged in
-if (!isset($_SESSION['adminName'])) {
+// if (!isset($_SESSION['adminName'])) {
     
-    header('location: login.html'); //sends users to login screen if they haven't logged in
+//     header('location: login.html'); //sends users to login screen if they haven't logged in
     
-}
+// }
 
 ?>
 <!DOCTYPE html>
