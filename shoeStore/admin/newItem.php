@@ -3,25 +3,25 @@ include("../api/db/Database.php");
 // start session to access session data
 session_start();
 $user = null;
-// if(isset($_SESSION["id"])){
-//     // find user in db
-//     $user = Database::getUserDao()->findById($_SESSION["id"]);
-//     // if no user was found or if user is not admin, return them
-//     if($user == null || !$user->isAdmin()){
-//         header("Location: login.php");
-//         die();
-//     }
-// } else {
-//     // found no valid session user id, take them back 
-//     header("Location: login.php");
-//     die();
-// }
+if(isset($_SESSION["id"])){
+    // find user in db
+    $user = Database::getUserDao()->findById($_SESSION["id"]);
+    // if no user was found or if user is not admin, return them
+    if($user == null || !$user->isAdmin()){
+        header("Location:  /cst336/shoeStore/admin/login.php/login.php");
+        die();
+    }
+} else {
+    // found no valid session user id, take them back 
+    header("Location: /cst336/shoeStore/admin/login.php");
+    die();
+}
 // if we reach here, user is an admin and is logged in
 include("../shell/top.php");
 ?>
 <div class="navigation-bar">
-    <a href="/admin/">＋ Admin Home</a>
-    <a href="/admin/newItem.php">＋ New Item</a>
+    <a href=" /cst336/shoeStore/admin/">＋ Admin Home</a>
+    <a href="/cst336/shoeStore/admin/newItem.php">＋ New Item</a>
 </div>
 <!DOCTYPE html>
 <html>
