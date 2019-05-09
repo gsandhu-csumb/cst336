@@ -8,12 +8,12 @@ if(isset($_SESSION["id"])){
     $user = Database::getUserDao()->findById($_SESSION["id"]);
     // if no user was found or if user is not admin, return them
     if($user == null || !$user->isAdmin()){
-        header("Location: /shoeStore/admin/login.php");
+        header("Location: /shoeStoreHeroku/admin/login.php");
         die();
     }
 } else {
     // found no valid session user id, take them back 
-    header("Location: /shoeStore/admin/login.php");
+    header("Location: /shoeStoreHeroku/admin/login.php");
     die();
 }
 // if we reach here, user is an admin and is logged in

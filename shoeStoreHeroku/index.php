@@ -1,7 +1,7 @@
 <?php include("shell/top.php") ?>
 <div id="video-home">
     <video id="video-bg" preload="auto" loop autoplay>
-    <source type="video/webm" src="/shoeStore/assets/video/city_walking.webm">
+    <source type="video/webm" src="/shoeStoreHeroku/assets/video/city_walking.webm">
     </video>
     <div id="overlay"></div>
     <div id="logo">
